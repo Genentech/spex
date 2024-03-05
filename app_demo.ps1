@@ -11,25 +11,19 @@ content of file for example:
 `$env:HOST_DATA_STORAGE="C:\path\to\your\data"
 "@
 
-# Попытка загрузить переменные среды из файла
 $envFile = "./set_env.local.ps1"
 if (Test-Path $envFile) {
     . $envFile
 } else {
-    Write-Host "ERROR: set_env.local.ps1 not found"
-    exit
+    Write-Host "WARNING: set_env.local.ps1 not found. Using current directory as HOST_DATA_STORAGE."
+    $env:HOST_DATA_STORAGE = $PWD.Path
 }
 
-# Проверка на наличие переменной среды HOST_DATA_STORAGE
 if ([string]::IsNullOrEmpty($env:HOST_DATA_STORAGE)) {
     Write-Host $alert
     exit 1
 }
 
-# Изменение прав доступа к папке redis и скрипту build.sh не требуется в Windows
-# PowerShell автоматически обрабатывает права доступа
-
-# Выбор файла docker-compose
 $DOCKER_COMPOSE_FILE = "docker-compose-demo.yml"
 
 switch ($args[0]) {

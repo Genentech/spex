@@ -1,0 +1,45 @@
+{
+  "name": "median_denoise",
+  "description": "Remove median noise from img",
+  "stage": "2",
+  "params": {
+    "all_channels": {
+      "name": "all_channels",
+      "description": "List of all channels of a image",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    },
+    "kernel": {
+      "name": "kernel",
+      "description": "5-7 is a typical range",
+      "type": "int",
+      "required": true,
+      "default": 5
+    },
+    "channel_list": {
+      "name": "channel_list",
+      "description": "Channels to be denoised",
+      "type": "channels",
+      "required": true,
+      "default": ""
+    }
+  },
+  "script_path": "median_denoise",
+  "return": {
+    "image": {
+      "type": "array",
+      "description": "Denoised image stack as numpy array",
+      "name": "image"
+    }
+  },
+  "depends_and_script": [
+    "load_image",
+    "load_tiff"
+  ],
+  "libs": [
+    "scikit-image==0.18.1",
+    "scikit-learn==0.24.2",
+    "dask==2021.11.1"
+  ]
+}

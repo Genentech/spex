@@ -1,0 +1,25 @@
+{
+  "name": "find_boundaries",
+  "description": "Return bool array where boundaries between labeled regions are True.",
+  "stage": "6",
+  "params": {
+    "labels": {
+      "name": "labels",
+      "description": "Multichannel image as numpy array",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    }
+  },
+  "script_path": "find_boundaries",
+  "return":{
+    "contour": {
+      "name": "contour",
+      "type": "array",
+      "description": "Array of bool, same shape as labels"
+    }
+  },
+  "depends_and_script": [
+    "simulate_cell"
+  ]
+}

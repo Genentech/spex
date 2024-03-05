@@ -1,0 +1,1 @@
+$env:HOST_DATA_STORAGE="C:\temp\DATA_STORAGE"

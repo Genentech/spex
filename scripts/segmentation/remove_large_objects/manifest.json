@@ -1,0 +1,39 @@
+{
+  "name": "remove_large_objects",
+  "description": "Remove large segmented objects",
+  "stage": "4",
+  "params": {
+    "labels": {
+      "name": "labels",
+      "description": "Multichannel image as numpy array",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    },
+    "maxsize": {
+      "name": "maxsize",
+      "description": "Maximum pixel size",
+      "type": "int",
+      "required": true,
+      "default": 75
+    }
+  },
+  "script_path": "remove_large_objects",
+  "return": {
+    "labels": {
+      "name": "labels",
+      "type": "array",
+      "description": "2D label numpy array"
+    }
+  },
+  "depends_and_script": [],
+  "depends_or_script": [
+    "deepcell_cellseg",
+    "stardist_cellseg",
+    "cellpose_cellseg",
+    "classicwastershed_cellseg"
+  ],
+  "libs": [
+    "numpy==1.19.3"
+  ]
+}

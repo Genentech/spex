@@ -1,0 +1,32 @@
+{
+    "name": "STpathway",
+    "description": "Pathway analysis",
+    "stage": "1",
+    "params":{
+        "pathway_file": {
+            "name": "pathway_file",
+            "description": "A .csv file with gene weights for each pathway",
+            "type": "string",
+            "required": true,
+            "default": "/app/progeny.csv"
+        }
+    },
+    "script_path": "STpathway",
+    "return": {
+        "pathways":{
+            "name": "pathway_data",
+            "type": "adata",
+            "description": "h5ad with .obsm['pathways']"
+        }
+
+    },
+    "depends_and_script": [
+        "STNormalization"
+    ],
+    "libs": [
+        "scanpy==1.9.3",
+        "scvi-tools==0.20.3",
+        "pegasuspy[all]==1.7.1",
+        "decoupler-py==1.3.4"
+    ]
+}

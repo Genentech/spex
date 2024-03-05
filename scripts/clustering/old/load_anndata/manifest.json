@@ -1,0 +1,32 @@
+{
+  "description": "load anndata",
+  "name": "load_anndata",
+  "stage": "1",
+  "params": {
+    "filename": {
+      "name": "filename",
+      "description": "path to file what we do",
+      "type": "file",
+      "hidden": false,
+      "required": true,
+      "default": ""
+    }
+  },
+  "script_path": "load_anndata",
+  "return": {
+    "image": {
+      "type": "array",
+      "description": "Image opened by ASIImage",
+      "name": "image"
+    },
+    "all_channels": {
+      "type": "array",
+      "description": "List of all channels of a image",
+      "name": "all_channels"
+    }
+  },
+  "depends_and_script": [],
+  "libs": [
+    "anndata==0.8.0"
+  ]
+}

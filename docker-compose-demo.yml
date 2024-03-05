@@ -1,0 +1,182 @@
+version: "3.7"
+
+networks:
+  spex:
+
+services:
+  # Infrastructures
+  arangodb:
+    image: "ghcr.io/genentech/spex.arango:latest"
+    container_name: spex-arangodb
+    restart: always
+    networks:
+      spex:
+        aliases:
+          - spex-arangodb
+    ports:
+      - '8529:8529'
+    env_file:
+      - ./.env.common.demo
+    volumes:
+      - ~/spex_db:/var/lib/arangodb3
+
+  redisjson:
+    image: "ghcr.io/genentech/spex.redis:latest"
+    container_name: spex-redisjson
+    restart: always
+    networks:
+      spex:
+        aliases:
+          - spex-redisjson
+    ports:
+      - '6379:6379'
+  # End of Infrastructures
+
+  database:
+    image: "ghcr.io/genentech/spex.omero.postgresql:latest"
+    environment:
+      POSTGRES_USER: omero
+      POSTGRES_DB: omero
+      POSTGRES_PASSWORD: omero
+    networks:
+      - spex
+    restart: always
+
+
+  omeroserver:
+    image: "ghcr.io/genentech/spex.omero.server:latest"
+    environment:
+      CONFIG_omero_db_host: database
+      CONFIG_omero_db_user: omero
+      CONFIG_omero_db_pass: omero
+      CONFIG_omero_db_name: omero
+      ROOTPASS: omero
+    networks:
+      - spex
+    ports:
+      - "4063:4063"
+      - "4064:4064"
+    restart: always
+    depends_on:
+      - database
+
+  omeroweb:
+    image: "openmicroscopy/omero-web-standalone:5"
+    environment:
+      OMEROHOST: omeroserver
+    networks:
+      - spex
+    ports:
+      - "4080:4080"
+    restart: always
+    depends_on:
+      - omeroserver
+
+  # Microservices
+  ms_omero_sessions:
+    image: "ghcr.io/genentech/spex.omero.sessions:latest"
+    container_name: spex-ms-omero-sessions
+    restart: always
+    ports:
+      - '8080:8080'
+    env_file:
+      - ./.env.common.demo
+    environment:
+      SERVER_NAME: "spex-ms-omero-sessions:8080"
+    networks:
+      spex:
+        aliases:
+          - spex-ms-omero-sessions
+    depends_on:
+      - redisjson
+
+  ms_image_loader:
+    image: "ghcr.io/genentech/spex.omero.image.downloader:latest"
+    container_name: spex-ms-image-loader
+    restart: always
+    env_file:
+      - ./.env.common.demo
+    networks:
+      spex:
+        aliases:
+          - spex-ms-image-loader
+    volumes:
+      - ${HOST_DATA_STORAGE}:/DATA_STORAGE
+    depends_on:
+      - ms_omero_sessions
+      - redisjson
+
+  ms_pipeline_manager:
+    image: "ghcr.io/genentech/spex.pipeline.manager:latest"
+    container_name: spex-ms-pipeline-manager
+    restart: always
+    env_file:
+      - ./.env.common.demo
+    networks:
+      spex:
+        aliases:
+          - spex-ms-collector
+    depends_on:
+      - arangodb
+
+  ms_job_manager:
+    image: "ghcr.io/genentech/spex.job.manager:latest"
+    container_name: spex-ms-job-manager
+    restart: always
+    networks:
+      spex:
+        aliases:
+          - spex-job-manager
+    volumes:
+      - ${HOST_DATA_STORAGE}:/DATA_STORAGE
+      - ./scripts:/DATA_STORAGE/scripts
+    env_file:
+      - ./.env.common.demo
+    environment:
+      - CONFIG_IGNORE_ENV_FILES=True
+    depends_on:
+      - arangodb
+      - redisjson
+
+  backend:
+    image: "ghcr.io/genentech/spex.backend:latest"
+    container_name: spex-backend
+    restart: always
+    networks:
+      spex:
+        aliases:
+          - spex-backend
+    volumes:
+      - ${HOST_DATA_STORAGE}:/DATA_STORAGE
+      - ./scripts:/DATA_STORAGE/Scripts
+    ports:
+      - '80:80'
+    env_file:
+      - ./.env.common.demo
+    depends_on:
+      - arangodb
+      - redisjson
+      - omeroserver
+
+
+  frontend:
+    image: "ghcr.io/genentech/spex.frontend:latest"
+    container_name: spex-frontend
+    restart: always
+    networks:
+      spex:
+        aliases:
+          - spex-frontend
+    volumes:
+      - ${HOST_DATA_STORAGE}:/DATA_STORAGE
+      - ./scripts:/DATA_STORAGE/Scripts
+    environment:
+      REACT_APP_BACKEND_URL_ROOT: "http://127.0.0.1/v1/"
+    depends_on:
+      - backend
+    ports:
+      - '3000:3000'
+    ulimits:
+      nofile:
+        soft: 4096
+        hard: 8192

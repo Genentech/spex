@@ -1,0 +1,47 @@
+{
+    "name": "STcluster",
+    "description": "Cluster ST data",
+    "stage": "2",
+    "params":{
+        "spatial_weight": {
+            "name": "spatial_weight",
+            "description": "How much to weight spatial neighbor edges",
+            "type": "float",
+            "required": true,
+            "default": 0.0
+        },
+
+        "resolution": {
+            "name": "resolution",
+            "description": "The resolution of the clustering",
+            "type": "float",
+            "required": true,
+            "default": 1.0
+        },
+
+        "method": {
+            "name": "method",
+            "description": "The method used for clustering (Leiden or Louvain)",
+            "type": "string",
+            "required": true,
+            "default": "leiden"
+        }
+    },
+
+    "script_path": "STCluster",
+    "return": {
+        "STclust": {
+            "name": "STclust",
+            "type": "adata",
+            "description": "Clustered h5ad"
+        }
+    },
+    "depends_and_script": [
+        "STDimreduce"  
+    ],
+    "libs": [
+        "scanpy==1.9.3",
+        "squidpy==1.2.3",
+        "leidenalg==0.9.1"
+    ]
+}

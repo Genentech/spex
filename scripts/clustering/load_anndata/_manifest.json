@@ -1,0 +1,35 @@
+{
+  "description": "load anndata",
+  "name": "load_anndata",
+  "stage": "1",
+  "params": {
+    "filename": {
+      "name": "filename",
+      "description": "path to file what we do",
+      "type": "file",
+      "hidden": false,
+      "required": false,
+      "default": ""
+    }
+  },
+  "script_path": "load_anndata",
+  "return": {
+    "adata": {
+      "type": "adata",
+      "description": "Anndata object",
+      "name": "adata"
+    },
+    "all_channels": {
+      "type": "array",
+      "description": "List of all channels of a image",
+      "name": "all_channels"
+    }
+  },
+  "depends_and_script": [],
+  "depends_or_script": [
+  ],
+  "libs": [
+    "anndata==0.8.0",
+    "pandas==1.3.4"
+  ]
+}

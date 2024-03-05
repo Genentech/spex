@@ -1,0 +1,153 @@
+version: "3.7"
+
+networks:
+  spex:
+
+services:
+  # Infrastructures
+  arangodb:
+    image: arangodb:3.7.7
+    container_name: spex-arangodb
+    restart: always
+    networks:
+      spex:
+        aliases:
+          - spex-arangodb
+    ports:
+      - '8529'
+    env_file:
+      - ./backend/.env.local
+    volumes:
+      - ~/spex_db:/var/lib/arangodb3
+
+  redisjson:
+    container_name: spex-redisjson
+    restart: always
+    networks:
+      spex:
+        aliases:
+          - spex-redisjson
+    ports:
+      - '6379'
+    build:
+      context: ./redis
+      dockerfile: Dockerfile
+  # End of Infrastructures
+
+  # Microservices
+  ms_omero_sessions:
+    container_name: spex-ms-omero-sessions
+    restart: always
+    ports:
+      - '8080'
+    networks:
+      spex:
+        aliases:
+          - spex-ms-omero-sessions
+    env_file:
+      - ./microservices/ms-omero-sessions/.env
+      - ./microservices/ms-omero-sessions/.env.local
+      - ./microservices/.env.common
+      - ./microservices/.env.common.local
+    build:
+      context: .
+      dockerfile: ./microservices/ms-omero-sessions/Dockerfile
+    depends_on:
+      - redisjson
+
+  ms_image_loader:
+    container_name: spex-ms-image-loader
+    restart: always
+    networks:
+      spex:
+        aliases:
+          - spex-ms-image-loader
+    volumes:
+      - ${HOST_DATA_STORAGE}:/DATA_STORAGE
+    env_file:
+      - ./microservices/ms-omero-image-downloader/.env
+      - ./microservices/ms-omero-image-downloader/.env.local
+      - ./microservices/.env.common
+      - ./microservices/.env.common.local
+    build:
+      context: .
+      dockerfile: ./microservices/ms-omero-image-downloader/Dockerfile
+    depends_on:
+      - ms_omero_sessions
+      - redisjson
+
+  ms_pipeline_manager:
+    container_name: spex-ms-pipeline-manager
+    restart: always
+    networks:
+      spex:
+        aliases:
+          - spex-ms-collector
+    env_file:
+      - ./microservices/ms-pipeline-manager/.env
+      - ./microservices/ms-pipeline-manager/.env.local
+      - ./microservices/.env.common
+      - ./microservices/.env.common.local
+    build:
+      context: .
+      dockerfile: ./microservices/ms-pipeline-manager/Dockerfile
+    depends_on:
+      - arangodb
+
+  ms_job_manager:
+    container_name: spex-ms-job-manager
+    restart: always
+    networks:
+      spex:
+        aliases:
+          - spex-job-manager
+    volumes:
+      - ${HOST_DATA_STORAGE}:/DATA_STORAGE
+      - ./scripts:/DATA_STORAGE/Scripts
+    env_file:
+      - ./microservices/ms-job-manager/.env
+      - ./microservices/ms-job-manager/.env.local
+      - ./microservices/.env.common
+      - ./microservices/.env.common.local
+    build:
+      context: .
+      dockerfile: ./microservices/ms-job-manager/Dockerfile
+    depends_on:
+      - arangodb
+      - redisjson
+
+  backend:
+    container_name: spex-backend
+    restart: always
+    networks:
+      spex:
+        aliases:
+          - spex-backend
+    volumes:
+      - ${HOST_DATA_STORAGE}:/DATA_STORAGE
+      - ./scripts:/DATA_STORAGE/Scripts
+    ports:
+      - '8080'
+    env_file:
+      - ./backend/.env
+      - ./backend/.env.local
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    depends_on:
+      - arangodb
+      - redisjson
+
+  nginx:
+    image: nginx:1.19.8
+    container_name: spex-nginx
+    restart: always
+    networks:
+      - spex
+    volumes:
+      - ./frontend/build:/usr/share/spex/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - '80:80'
+    depends_on:
+      - backend

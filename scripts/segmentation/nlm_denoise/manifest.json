@@ -1,0 +1,45 @@
+{
+  "name": "nlm_denoise",
+  "description": "Non local means denoising",
+  "stage": "2",
+  "params": {
+    "image": {
+      "name": "image",
+      "description": "Multichannel numpy array (C,X,Y)",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    },
+    "patch": {
+      "name": "patch",
+      "description": "Patch size (5 is typical)",
+      "type": "int",
+      "required": true,
+      "default": 5
+    },
+    "dist": {
+      "name": "dist",
+      "description": "Ignore pixels above this threshold (6 is typical)",
+      "type": "int",
+      "required": true,
+      "default": 6
+    }
+  },
+  "script_path": "nlm_denoise",
+  "return": {
+    "image": {
+      "type": "array",
+      "description": "Denoised image stack as numpy array",
+      "name": "image"
+    }
+  },
+  "depends_and_script": [
+    "load_image",
+    "load_tiff"
+  ],
+  "libs": [
+    "scikit-image==0.18.1",
+    "scikit-learn==0.24.2",
+    "dask"
+  ]
+}

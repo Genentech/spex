@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+absl-py = "==0.12.0"
+aicsimageio = "==3.3.4"
+aicspylibczi = "==2.8.0"
+alabaster = "==0.7.12"
+jupyter = "*"
+numpy = "*"
+tifffile = "*"
+scikit-image = "==0.18.1"
+matplotlib = "*"
+pandas = "*"
+watershed = "*"
+scikit-learn = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+python_full_version = "3.9.2"

@@ -1,0 +1,53 @@
+{
+  "name": "rescues_cells",
+  "description": "Rescue/Segment cells that deep learning approach may have missed",
+  "stage": "4",
+  "params": {
+    "image": {
+      "name": "image",
+      "description": "Multichannel image as numpy array",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    },
+    "all_channels": {
+      "name": "all_channels",
+      "description": "List of all channels of a image",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    },
+    "labels": {
+      "name": "labels",
+      "description": "Numpy array of segmentation labels",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    },
+    "channel_list": {
+      "name": "channel_list",
+      "description": "list of channels to use for nuclear segmentation (red, green, blue)",
+      "type": "channels",
+      "required": true
+    }
+  },
+  "script_path": "rescues_cells",
+  "return": {
+    "labels": {
+      "name": "labels",
+      "type": "array",
+      "description": "2D numpy array with added cells"
+    }
+  },
+  "depends_and_script": [],
+  "depends_or_script": [
+    "deepcell_cellseg",
+    "stardist_cellseg",
+    "cellpose_cellseg",
+    "classicwastershed_cellseg"
+  ],
+  "libs": [
+    "scikit-image==0.18.1",
+    "scikit-learn==0.24.2"
+  ]
+}

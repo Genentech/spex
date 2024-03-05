@@ -1,0 +1,16 @@
+*.local
+.vscode
+/ignore
+/__pycache__
+*.pyc
+*.pyo
+/env
+/tmp
+*.iml
+*.ipr
+*.iws
+/data
+*key
+*key.pub
+/microservices/ms-*
+.idea

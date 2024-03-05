@@ -1,0 +1,7 @@
+/.idea/
+/install_r/spdep/
+/install_r/R-4.2.2/*
+/spatial/renv/
+/spatial/.Rprofile
+/spatial/cluster_results.csv
+/MERFISH_relaxed_drug_parallel.Rdata

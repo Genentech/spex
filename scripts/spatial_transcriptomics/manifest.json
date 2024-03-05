@@ -1,0 +1,10 @@
+{
+  "name": "Spatial_transcriptomics",
+  "description": "Spatial transcriptomics",
+  "order": 1,
+  "stages": [
+    "preprocessing",
+    "CLQ",
+    "dimensionality_reduction"
+  ]
+}

@@ -1,0 +1,677 @@
+2023-10-23 00:38:01,659 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481644] time[14] tag[omero.import.process.init]
+2023-10-23 00:38:01,665 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=138960(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:01,677 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.jobs.UploadJob,6797
+2023-10-23 00:38:01,678 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.jobs.JobOriginalFileLink,11075
+2023-10-23 00:38:01,687 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.jobs.MetadataImportJob,6798
+2023-10-23 00:38:01,693 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.jobs.PixelDataJob,6799
+2023-10-23 00:38:01,698 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.jobs.ThumbnailGenerationJob,6800
+2023-10-23 00:38:01,703 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.jobs.IndexingJob,6801
+2023-10-23 00:38:01,707 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481707] time[0] tag[omero.repo.internal_register.find_repo_files]
+2023-10-23 00:38:01,709 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.OriginalFile,6746
+2023-10-23 00:38:01,709 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481708] time[1] tag[omero.repo.create_original_file.save]
+2023-10-23 00:38:01,709 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481709] time[0] tag[omero.repo.create_original_file.internal_mkdir]
+2023-10-23 00:38:01,709 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481709] time[0] tag[omero.repo.internal_register.load]
+2023-10-23 00:38:01,709 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481707] time[2] tag[omero.repo.save_fileset.register]
+2023-10-23 00:38:01,709 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481709] time[0] tag[omero.repo.save_fileset.update_fileset_entries]
+2023-10-23 00:38:01,712 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.fs.Fileset,353
+2023-10-23 00:38:01,712 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.fs.FilesetJobLink,561
+2023-10-23 00:38:01,712 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.fs.FilesetJobLink,562
+2023-10-23 00:38:01,712 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.fs.FilesetJobLink,563
+2023-10-23 00:38:01,712 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.fs.FilesetJobLink,564
+2023-10-23 00:38:01,712 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.fs.FilesetJobLink,565
+2023-10-23 00:38:01,713 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.fs.FilesetEntry,353
+2023-10-23 00:38:01,714 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481710] time[4] tag[omero.repo.save_fileset.save]
+2023-10-23 00:38:01,719 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481660] time[59] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$8.doWork]
+2023-10-23 00:38:01,720 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481660] time[59] tag[omero.repo.save_fileset]
+2023-10-23 00:38:01,720 INFO  [                      omero.cmd.SessionI] (.Server-14) Added servant to adapter: 1d451b7e-6b08-4e47-85c5-6edd5995961c/fe66d9cf-7ca5-4fcf-8917-5a40e607acb0-ManagedImportProcessI(omero.grid._ImportProcessTie@13074971)
+2023-10-23 00:38:01,720 DEBUG [                omero.util.ServantHolder] (.Server-14) Added omero.grid._ImportProcessTie@13074971 to omero.util.ServantHolder@653627b9 as fe66d9cf-7ca5-4fcf-8917-5a40e607acb0-ManagedImportProcessI
+2023-10-23 00:38:01,720 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481660] time[60] tag[omero.import.process.create]
+2023-10-23 00:38:01,726 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:01,729 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021481724] time[4] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$2.doWork]
+2023-10-23 00:38:01,730 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:01,732 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021481729] time[2] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$4.doWork]
+2023-10-23 00:38:01,735 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:01,737 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021481732] time[4] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$6.doWork]
+2023-10-23 00:38:01,738 INFO  [    ome.security.basic.BasicEventContext] (l.Server-2)  cctx:	group=0
+2023-10-23 00:38:01,739 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:01,740 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021481738] time[2] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$1.doWork]
+2023-10-23 00:38:01,740 INFO  [                      omero.cmd.SessionI] (l.Server-2) Added servant to adapter: 1d451b7e-6b08-4e47-85c5-6edd5995961c/98ccec14-96cc-4bfb-80bd-ba940bbdca79-RepoRawFileStoreI(omero.api._RawFileStoreTie@2be41f2)
+2023-10-23 00:38:01,740 DEBUG [                omero.util.ServantHolder] (l.Server-2) Added omero.api._RawFileStoreTie@2be41f2 to omero.util.ServantHolder@653627b9 as 98ccec14-96cc-4bfb-80bd-ba940bbdca79-RepoRawFileStoreI
+2023-10-23 00:38:01,740 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021481724] time[16] tag[omero.import.process.opener]
+2023-10-23 00:38:01,740 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021481724] time[16] tag[omero.import.process.uploader]
+2023-10-23 00:38:01,744 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:01,745 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021481743] time[1] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:01,817 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:01,821 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021481814] time[6] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:01,890 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:01,893 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021481889] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:01,962 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:01,969 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021481961] time[7] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,061 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,064 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021482059] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,143 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,148 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021482141] time[6] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,222 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,225 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021482220] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,300 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,303 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021482298] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,381 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,385 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021482380] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,488 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,492 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021482486] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,572 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,576 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021482570] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,656 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,663 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021482654] time[8] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,747 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,752 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021482746] time[6] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,827 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,832 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021482825] time[7] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,895 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,899 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021482894] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:02,964 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:02,969 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021482963] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,032 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,036 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021483030] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,098 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,102 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021483097] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,166 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,169 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021483164] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,234 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,238 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021483233] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,298 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,302 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021483297] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,433 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,438 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021483431] time[6] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,506 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,509 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021483504] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,624 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,628 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021483623] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,690 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,694 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021483689] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,756 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,759 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021483755] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,822 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,826 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021483821] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,886 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,889 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021483885] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:03,955 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:03,959 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021483954] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,025 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,028 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021484024] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,090 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,094 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021484089] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,172 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,176 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021484170] time[6] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,253 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,256 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021484251] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,324 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,329 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021484322] time[6] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,402 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,406 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021484400] time[6] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,472 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,476 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021484471] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,544 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,548 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021484543] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,619 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,623 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021484618] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,687 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,691 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021484685] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,751 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,756 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021484750] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,815 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,819 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021484813] time[6] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,881 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,885 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021484880] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:04,945 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:04,949 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021484944] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:05,013 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,017 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021485012] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:05,078 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,082 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021485077] time[4] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:05,146 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,150 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021485145] time[5] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:05,192 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,194 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021485190] time[3] tag[omero.call.success.ome.services.RawFileBean.write]
+2023-10-23 00:38:05,202 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=138976(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,308 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021485202] time[105] tag[omero.services.file.flush]
+2023-10-23 00:38:05,435 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021485308] time[126] tag[omero.services.file.checksum]
+2023-10-23 00:38:05,437 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:UPDATE,class ome.model.core.OriginalFile,6746
+2023-10-23 00:38:05,437 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021485435] time[2] tag[omero.services.file.finalize]
+2023-10-23 00:38:05,440 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021485197] time[242] tag[omero.call.success.ome.services.RawFileBean.save]
+2023-10-23 00:38:05,446 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=138977(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,450 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021485442] time[7] tag[omero.call.success.ome.services.RawFileBean.close]
+2023-10-23 00:38:05,450 DEBUG [                omero.util.ServantHolder] (l.Server-6) Removed omero.api._RawFileStoreTie@2be41f2 from omero.util.ServantHolder@653627b9 as 98ccec14-96cc-4bfb-80bd-ba940bbdca79-RepoRawFileStoreI
+2023-10-23 00:38:05,450 INFO  [                      omero.cmd.SessionI] (l.Server-6) Unregistered servant:1d451b7e-6b08-4e47-85c5-6edd5995961c/98ccec14-96cc-4bfb-80bd-ba940bbdca79-RepoRawFileStoreI(omero.api._RawFileStoreTie@2be41f2)
+2023-10-23 00:38:05,453 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,453 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021485452] time[1] tag[omero.call.success.ome.services.blitz.impl.ServiceFactoryI$3.doWork]
+2023-10-23 00:38:05,456 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021485453] time[2] tag[omero.import.process.checksum]
+2023-10-23 00:38:05,460 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=138978(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,464 INFO  [       ome.security.basic.CurrentDetails] (l.Server-2) Adding log:UPDATE,class ome.model.jobs.UploadJob,6797
+2023-10-23 00:38:05,468 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021485457] time[11] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$12.doWork]
+2023-10-23 00:38:05,469 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,470 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021485468] time[1] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$2.doWork]
+2023-10-23 00:38:05,471 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,471 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021485470] time[1] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$4.doWork]
+2023-10-23 00:38:05,472 INFO  [       ome.formats.importer.ImportConfig] (l.Server-2) OMERO.blitz Version: 5.6.0
+2023-10-23 00:38:05,472 INFO  [       ome.formats.importer.ImportConfig] (l.Server-2) Bioformats version: 6.11.1 revision: 383bac974cd52e83908b54e4769ebb1e0d0673ee date: 1 December 2022
+2023-10-23 00:38:05,473 INFO  [                      omero.cmd.SessionI] (l.Server-2) Added servant to adapter: 1d451b7e-6b08-4e47-85c5-6edd5995961c/IHandleb95b12e6-62f7-44fd-a6b1-56c9a79febeb(omero.cmd._HandleTie@1689aba8)
+2023-10-23 00:38:05,473 DEBUG [                omero.util.ServantHolder] (l.Server-2) Added omero.cmd._HandleTie@1689aba8 to omero.util.ServantHolder@653627b9 as IHandleb95b12e6-62f7-44fd-a6b1-56c9a79febeb
+2023-10-23 00:38:05,473 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021485473] time[0] tag[omero.background.submit]
+2023-10-23 00:38:05,473 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021485456] time[16] tag[omero.import.process.submit]
+2023-10-23 00:38:05,474 DEBUG [                omero.util.ServantHolder] (.Server-12) Removed omero.grid._ImportProcessTie@13074971 from omero.util.ServantHolder@653627b9 as fe66d9cf-7ca5-4fcf-8917-5a40e607acb0-ManagedImportProcessI
+2023-10-23 00:38:05,475 INFO  [                      omero.cmd.SessionI] (.Server-12) Unregistered servant:1d451b7e-6b08-4e47-85c5-6edd5995961c/fe66d9cf-7ca5-4fcf-8917-5a40e607acb0-ManagedImportProcessI(omero.grid._ImportProcessTie@13074971)
+2023-10-23 00:38:05,479 INFO  [    ome.formats.OMEROMetadataStoreClient] (2-thread-1) Call context: {omero.group:0}
+2023-10-23 00:38:05,479 INFO  [    ome.formats.OMEROMetadataStoreClient] (2-thread-1) Call context: {omero.logfilename:root_0/2023-10/23/00-38-01.517.log}
+2023-10-23 00:38:05,483 INFO  [    ome.security.basic.BasicEventContext] (l.Server-6)  cctx:	group=0
+2023-10-23 00:38:05,484 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,487 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021485482] time[5] tag[omero.call.success.ome.logic.AdminImpl.getEventContext]
+2023-10-23 00:38:05,513 INFO  [    ome.formats.OMEROMetadataStoreClient] (2-thread-1) Pinging session every 300s.
+2023-10-23 00:38:05,529 INFO  [                loci.formats.ImageReader] (2-thread-1) OMETiffReader initializing /OMERO/ManagedRepository/root_0/2023-10/23/00-38-01.517/HP-237690_IMC_220725-160200_SSF-SO_ROI_003_16bit.ome.tiff
+2023-10-23 00:38:05,531 INFO  [       loci.formats.in.MinimalTiffReader] (2-thread-1) Reading IFDs
+2023-10-23 00:38:05,531 INFO  [       loci.formats.in.MinimalTiffReader] (2-thread-1) Populating metadata
+2023-10-23 00:38:05,536 INFO  [    ome.security.basic.BasicEventContext] (l.Server-2)  cctx:	group=0
+2023-10-23 00:38:05,537 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,540 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021485536] time[3] tag[omero.call.success.ome.logic.QueryImpl.findAll]
+2023-10-23 00:38:05,543 INFO  [    ome.security.basic.BasicEventContext] (.Server-14)  cctx:	group=0
+2023-10-23 00:38:05,544 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,545 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021485543] time[2] tag[omero.call.success.ome.logic.QueryImpl.findAll]
+2023-10-23 00:38:05,547 INFO  [    ome.security.basic.BasicEventContext] (.Server-11)  cctx:	group=0
+2023-10-23 00:38:05,548 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,549 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021485546] time[2] tag[omero.call.success.ome.logic.QueryImpl.findAll]
+2023-10-23 00:38:05,551 INFO  [    ome.security.basic.BasicEventContext] (l.Server-2)  cctx:	group=0
+2023-10-23 00:38:05,552 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,554 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021485550] time[3] tag[omero.call.success.ome.logic.QueryImpl.findAll]
+2023-10-23 00:38:05,565 DEBUG [                   loci.formats.Memoizer] (2-thread-1) saved to temp file: /OMERO/BioFormatsCache/OMERO/ManagedRepository/root_0/2023-10/23/00-38-01.517/.HP-237690_IMC_220725-160200_SSF-SO_ROI_003_16bit.ome.tiff.bfmemo12142560122857342786
+2023-10-23 00:38:05,565 DEBUG [                   loci.formats.Memoizer] (2-thread-1) start[1698021485560] time[4] tag[loci.formats.Memoizer.saveMemo]
+2023-10-23 00:38:05,565 DEBUG [                   loci.formats.Memoizer] (2-thread-1) saved memo file: /OMERO/BioFormatsCache/OMERO/ManagedRepository/root_0/2023-10/23/00-38-01.517/.HP-237690_IMC_220725-160200_SSF-SO_ROI_003_16bit.ome.tiff.bfmemo (42772 bytes)
+2023-10-23 00:38:05,565 DEBUG [                   loci.formats.Memoizer] (2-thread-1) start[1698021485514] time[51] tag[loci.formats.Memoizer.setId]
+2023-10-23 00:38:05,565 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Image Count: 29
+2023-10-23 00:38:05,565 INFO  [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) File format: OME-TIFF
+2023-10-23 00:38:05,565 INFO  [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Base reader: loci.formats.in.OMETiffReader
+2023-10-23 00:38:05,565 INFO  [                 org.perf4j.TimingLogger] (2-thread-1) start[1698021485478] time[87] tag[omero.import.request.init]
+2023-10-23 00:38:05,566 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Step 0
+2023-10-23 00:38:05,568 WARN  [    ome.formats.model.ReferenceProcessor] (2-thread-1) Unknown target class for LSID: Image:0
+2023-10-23 00:38:05,568 INFO  [    ome.formats.OMEROMetadataStoreClient] (2-thread-1) Handling # of containers: 60
+2023-10-23 00:38:05,570 INFO  [    ome.security.basic.BasicEventContext] (.Server-11)  cctx:	group=0
+2023-10-23 00:38:05,572 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,573 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021485570] time[2] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$4.doWork]
+2023-10-23 00:38:05,573 INFO  [    ome.formats.OMEROMetadataStoreClient] (2-thread-1) Handling # of references: 1
+2023-10-23 00:38:05,574 INFO  [    ome.security.basic.BasicEventContext] (l.Server-6)  cctx:	group=0
+2023-10-23 00:38:05,575 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,575 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021485573] time[2] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$5.doWork]
+2023-10-23 00:38:05,578 INFO  [    ome.security.basic.BasicEventContext] (.Server-14)  cctx:	group=0
+2023-10-23 00:38:05,582 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=138981(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,590 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Image,353
+2023-10-23 00:38:05,590 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.containers.DatasetImageLink,353
+2023-10-23 00:38:05,591 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Pixels,353
+2023-10-23 00:38:05,591 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2209
+2023-10-23 00:38:05,591 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2209
+2023-10-23 00:38:05,591 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2210
+2023-10-23 00:38:05,592 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2210
+2023-10-23 00:38:05,592 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2211
+2023-10-23 00:38:05,592 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2211
+2023-10-23 00:38:05,592 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2212
+2023-10-23 00:38:05,592 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2212
+2023-10-23 00:38:05,593 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2213
+2023-10-23 00:38:05,593 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2213
+2023-10-23 00:38:05,593 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2214
+2023-10-23 00:38:05,593 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2214
+2023-10-23 00:38:05,593 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2215
+2023-10-23 00:38:05,594 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2215
+2023-10-23 00:38:05,594 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2216
+2023-10-23 00:38:05,594 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2216
+2023-10-23 00:38:05,594 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2217
+2023-10-23 00:38:05,594 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2217
+2023-10-23 00:38:05,595 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2218
+2023-10-23 00:38:05,595 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2218
+2023-10-23 00:38:05,595 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2219
+2023-10-23 00:38:05,595 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2219
+2023-10-23 00:38:05,596 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2220
+2023-10-23 00:38:05,596 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2220
+2023-10-23 00:38:05,596 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2221
+2023-10-23 00:38:05,596 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2221
+2023-10-23 00:38:05,596 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2222
+2023-10-23 00:38:05,596 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2222
+2023-10-23 00:38:05,596 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2223
+2023-10-23 00:38:05,597 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2223
+2023-10-23 00:38:05,597 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2224
+2023-10-23 00:38:05,597 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2224
+2023-10-23 00:38:05,597 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2225
+2023-10-23 00:38:05,597 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2225
+2023-10-23 00:38:05,597 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2226
+2023-10-23 00:38:05,597 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2226
+2023-10-23 00:38:05,598 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2227
+2023-10-23 00:38:05,598 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2227
+2023-10-23 00:38:05,598 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2228
+2023-10-23 00:38:05,598 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2228
+2023-10-23 00:38:05,599 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2229
+2023-10-23 00:38:05,599 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2229
+2023-10-23 00:38:05,600 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2230
+2023-10-23 00:38:05,600 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2230
+2023-10-23 00:38:05,601 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2231
+2023-10-23 00:38:05,601 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2231
+2023-10-23 00:38:05,601 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2232
+2023-10-23 00:38:05,602 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2232
+2023-10-23 00:38:05,602 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2233
+2023-10-23 00:38:05,602 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2233
+2023-10-23 00:38:05,602 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2234
+2023-10-23 00:38:05,603 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2234
+2023-10-23 00:38:05,603 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2235
+2023-10-23 00:38:05,603 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2235
+2023-10-23 00:38:05,603 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2236
+2023-10-23 00:38:05,603 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2236
+2023-10-23 00:38:05,604 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.LogicalChannel,2237
+2023-10-23 00:38:05,604 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:INSERT,class ome.model.core.Channel,2237
+2023-10-23 00:38:05,608 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021485582] time[26] tag[omero.saveImportGraph]
+2023-10-23 00:38:05,619 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021485577] time[42] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$3.doWork]
+2023-10-23 00:38:05,622 INFO  [                 org.perf4j.TimingLogger] (2-thread-1) start[1698021485566] time[56] tag[omero.import.request.metadata]
+2023-10-23 00:38:05,624 INFO  [    ome.security.basic.BasicEventContext] (l.Server-2)  cctx:	group=0
+2023-10-23 00:38:05,625 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,626 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021485623] time[2] tag[omero.call.success.ome.logic.QueryImpl.get]
+2023-10-23 00:38:05,627 INFO  [    ome.security.basic.BasicEventContext] (.Server-12)  cctx:	group=0
+2023-10-23 00:38:05,632 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=138985(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:05,634 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:UPDATE,class ome.model.core.OriginalFile,6745
+2023-10-23 00:38:05,639 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021485627] time[12] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]
+2023-10-23 00:38:05,640 INFO  [                 org.perf4j.TimingLogger] (2-thread-1) start[1698021485566] time[74] tag[omero.import.request.step]
+2023-10-23 00:38:05,640 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Step 1
+2023-10-23 00:38:05,640 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:0 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,644 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:0 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,648 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:0 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,650 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:0 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,654 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:0 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,657 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:0 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,660 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:0 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,662 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:0 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,665 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:0 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:05,667 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:1 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,671 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:1 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,675 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:1 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,677 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:1 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,681 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:1 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,684 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:1 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,687 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:1 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,689 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:1 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,691 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:1 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:05,693 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:2 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,697 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:2 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,701 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:2 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,703 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:2 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,706 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:2 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,710 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:2 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,713 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:2 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,716 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:2 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,718 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:2 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:05,721 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:3 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,725 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:3 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,730 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:3 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,733 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:3 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,737 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:3 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,741 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:3 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,744 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:3 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,746 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:3 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,748 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:3 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:05,751 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:4 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,755 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:4 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,759 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:4 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,762 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:4 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,766 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:4 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,770 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:4 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,773 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:4 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,775 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:4 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,796 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:4 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:05,799 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:5 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,803 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:5 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,807 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:5 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,810 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:5 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,814 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:5 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,820 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:5 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,831 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:5 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,834 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:5 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,837 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:5 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:05,839 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:6 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,843 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:6 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,847 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:6 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,850 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:6 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,854 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:6 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,858 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:6 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,861 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:6 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,863 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:6 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,866 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:6 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:05,868 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:7 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,872 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:7 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,875 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:7 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,878 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:7 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,882 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:7 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,886 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:7 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,889 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:7 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,892 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:7 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,896 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:7 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:05,899 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:8 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,903 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:8 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,907 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:8 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,910 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:8 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,914 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:8 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,918 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:8 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,920 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:8 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,922 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:8 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,925 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:8 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:05,927 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:9 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,930 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:9 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,934 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:9 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,937 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:9 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,943 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:9 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,948 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:9 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,951 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:9 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,954 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:9 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,957 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:9 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:05,959 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:10 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,963 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:10 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,966 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:10 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,970 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:10 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,974 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:10 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,978 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:10 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:05,980 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:10 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,984 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:10 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:05,988 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:10 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:05,990 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:11 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,993 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:11 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:05,997 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:11 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,000 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:11 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,005 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:11 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,009 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:11 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,012 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:11 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,014 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:11 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,016 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:11 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,019 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:12 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,022 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:12 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,026 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:12 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,028 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:12 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,032 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:12 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,036 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:12 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,038 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:12 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,041 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:12 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,043 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:12 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,045 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:13 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,049 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:13 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,053 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:13 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,056 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:13 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,059 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:13 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,065 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:13 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,068 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:13 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,070 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:13 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,073 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:13 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,075 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:14 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,080 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:14 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,085 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:14 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,088 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:14 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,092 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:14 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,110 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:14 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,114 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:14 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,117 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:14 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,120 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:14 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,123 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:15 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,128 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:15 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,134 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:15 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,147 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:15 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,152 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:15 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,156 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:15 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,159 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:15 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,162 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:15 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,166 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:15 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,168 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:16 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,172 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:16 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,175 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:16 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,178 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:16 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,182 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:16 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,187 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:16 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,190 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:16 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,192 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:16 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,195 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:16 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,197 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:17 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,202 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:17 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,205 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:17 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,208 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:17 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,212 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:17 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,216 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:17 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,219 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:17 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,221 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:17 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,224 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:17 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,226 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:18 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,230 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:18 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,234 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:18 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,237 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:18 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,240 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:18 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,244 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:18 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,246 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:18 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,248 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:18 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,252 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:18 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,255 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:19 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,258 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:19 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,262 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:19 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,265 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:19 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,269 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:19 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,273 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:19 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,276 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:19 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,279 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:19 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,281 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:19 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,284 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:20 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,289 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:20 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,292 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:20 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,295 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:20 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,299 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:20 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,303 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:20 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,306 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:20 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,309 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:20 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,311 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:20 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,313 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:21 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,317 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:21 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,321 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:21 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,324 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:21 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,327 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:21 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,331 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:21 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,334 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:21 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,337 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:21 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,339 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:21 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,342 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:22 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,345 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:22 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,349 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:22 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,352 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:22 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,355 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:22 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,359 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:22 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,361 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:22 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,364 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:22 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,367 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:22 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,369 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:23 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,373 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:23 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,376 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:23 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,379 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:23 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,383 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:23 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,399 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:23 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,402 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:23 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,405 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:23 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,407 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:23 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,409 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:24 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,413 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:24 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,417 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:24 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,420 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:24 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,433 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:24 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,439 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:24 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,442 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:24 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,445 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:24 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,447 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:24 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,451 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:25 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,455 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:25 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,460 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:25 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,463 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:25 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,467 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:25 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,470 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:25 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,475 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:25 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,477 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:25 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,480 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:25 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,483 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:26 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,487 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:26 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,490 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:26 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,493 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:26 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,496 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:26 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,499 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:26 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,504 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:26 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,506 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:26 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,509 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:26 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,511 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:27 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,514 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:27 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,519 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:27 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,522 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:27 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,525 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:27 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,529 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:27 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,531 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:27 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,534 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:27 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,537 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:27 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,539 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:28 X:0 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,543 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:28 X:512 Y:0 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,547 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:28 X:1024 Y:0 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,550 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:28 X:0 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,554 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:28 X:512 Y:512 TileWidth:512 TileHeight:512 arrayBuf.length:524288
+2023-10-23 00:38:06,557 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:28 X:1024 Y:512 TileWidth:189 TileHeight:512 arrayBuf.length:193536
+2023-10-23 00:38:06,560 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:28 X:0 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,562 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:28 X:512 Y:1024 TileWidth:512 TileHeight:85 arrayBuf.length:87040
+2023-10-23 00:38:06,564 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Plane:28 X:1024 Y:1024 TileWidth:189 TileHeight:85 arrayBuf.length:32130
+2023-10-23 00:38:06,568 INFO  [    ome.security.basic.BasicEventContext] (l.Server-6)  cctx:	group=0
+2023-10-23 00:38:06,573 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=138989(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,578 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021486567] time[11] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$7.doWork]
+2023-10-23 00:38:06,583 INFO  [    ome.security.basic.BasicEventContext] (.Server-14)  cctx:	group=0
+2023-10-23 00:38:06,589 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=138990(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,705 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:UPDATE,class ome.model.core.Pixels,353
+2023-10-23 00:38:06,711 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021486581] time[130] tag[omero.call.success.ome.logic.UpdateImpl.saveArray]
+2023-10-23 00:38:06,713 INFO  [    ome.security.basic.BasicEventContext] (.Server-13)  cctx:	group=0
+2023-10-23 00:38:06,718 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=138991(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,739 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486712] time[27] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$2.doWork]
+2023-10-23 00:38:06,739 INFO  [                 org.perf4j.TimingLogger] (2-thread-1) start[1698021485640] time[1099] tag[omero.import.request.pixels]
+2023-10-23 00:38:06,740 INFO  [    ome.security.basic.BasicEventContext] (.Server-11)  cctx:	group=0
+2023-10-23 00:38:06,741 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,742 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021486740] time[2] tag[omero.call.success.ome.logic.QueryImpl.get]
+2023-10-23 00:38:06,744 INFO  [    ome.security.basic.BasicEventContext] (l.Server-6)  cctx:	group=0
+2023-10-23 00:38:06,748 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=138992(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,751 INFO  [       ome.security.basic.CurrentDetails] (l.Server-6) Adding log:UPDATE,class ome.model.core.OriginalFile,6745
+2023-10-23 00:38:06,755 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021486743] time[12] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]
+2023-10-23 00:38:06,755 INFO  [                 org.perf4j.TimingLogger] (2-thread-1) start[1698021485640] time[1115] tag[omero.import.request.step]
+2023-10-23 00:38:06,755 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Step 2
+2023-10-23 00:38:06,757 INFO  [    ome.security.basic.BasicEventContext] (.Server-12)  cctx:	group=0
+2023-10-23 00:38:06,762 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=138993(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,766 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021486762] time[3] tag[omero.loadPixels]
+2023-10-23 00:38:06,771 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021486767] time[3] tag[omero.loadRenderingSettingsByUser]
+2023-10-23 00:38:06,783 DEBUG [                   loci.formats.Memoizer] (.Server-12) start[1698021486772] time[10] tag[loci.formats.Memoizer.loadMemo]
+2023-10-23 00:38:06,799 INFO  [                loci.formats.ImageReader] (.Server-12) OMETiffReader initializing /OMERO/ManagedRepository/root_0/2023-10/23/00-38-01.517/HP-237690_IMC_220725-160200_SSF-SO_ROI_003_16bit.ome.tiff
+2023-10-23 00:38:06,802 INFO  [       loci.formats.in.MinimalTiffReader] (.Server-12) Reading IFDs
+2023-10-23 00:38:06,803 INFO  [       loci.formats.in.MinimalTiffReader] (.Server-12) Populating metadata
+2023-10-23 00:38:06,808 DEBUG [                   loci.formats.Memoizer] (.Server-12) saved to temp file: /OMERO/BioFormatsCache/OMERO/ManagedRepository/root_0/2023-10/23/00-38-01.517/.HP-237690_IMC_220725-160200_SSF-SO_ROI_003_16bit.ome.tiff.bfmemo11874665032984511426
+2023-10-23 00:38:06,808 DEBUG [                   loci.formats.Memoizer] (.Server-12) start[1698021486806] time[1] tag[loci.formats.Memoizer.saveMemo]
+2023-10-23 00:38:06,808 DEBUG [                   loci.formats.Memoizer] (.Server-12) saved memo file: /OMERO/BioFormatsCache/OMERO/ManagedRepository/root_0/2023-10/23/00-38-01.517/.HP-237690_IMC_220725-160200_SSF-SO_ROI_003_16bit.ome.tiff.bfmemo (42763 bytes)
+2023-10-23 00:38:06,808 DEBUG [                   loci.formats.Memoizer] (.Server-12) start[1698021486772] time[35] tag[loci.formats.Memoizer.setId]
+2023-10-23 00:38:06,818 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.QuantumDef,353
+2023-10-23 00:38:06,819 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.RenderingDef,353
+2023-10-23 00:38:06,819 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2209
+2023-10-23 00:38:06,820 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2210
+2023-10-23 00:38:06,820 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2211
+2023-10-23 00:38:06,820 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2212
+2023-10-23 00:38:06,820 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2213
+2023-10-23 00:38:06,821 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2214
+2023-10-23 00:38:06,821 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2215
+2023-10-23 00:38:06,821 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2216
+2023-10-23 00:38:06,821 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2217
+2023-10-23 00:38:06,822 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2218
+2023-10-23 00:38:06,822 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2219
+2023-10-23 00:38:06,822 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2220
+2023-10-23 00:38:06,822 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2221
+2023-10-23 00:38:06,822 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2222
+2023-10-23 00:38:06,823 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2223
+2023-10-23 00:38:06,823 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2224
+2023-10-23 00:38:06,823 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2225
+2023-10-23 00:38:06,823 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2226
+2023-10-23 00:38:06,823 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2227
+2023-10-23 00:38:06,824 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2228
+2023-10-23 00:38:06,824 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2229
+2023-10-23 00:38:06,824 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2230
+2023-10-23 00:38:06,824 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2231
+2023-10-23 00:38:06,824 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2232
+2023-10-23 00:38:06,824 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2233
+2023-10-23 00:38:06,825 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2234
+2023-10-23 00:38:06,825 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2235
+2023-10-23 00:38:06,825 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2236
+2023-10-23 00:38:06,825 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.display.ChannelBinding,2237
+2023-10-23 00:38:06,830 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021486814] time[16] tag[omero.resetDefaultsInSet.saveAndReturn]
+2023-10-23 00:38:06,830 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021486762] time[67] tag[omero.resetDefaultsInSet]
+2023-10-23 00:38:06,838 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021486756] time[81] tag[omero.call.success.ome.logic.RenderingSettingsImpl.resetDefaultsInSet]
+2023-10-23 00:38:06,839 INFO  [    ome.security.basic.BasicEventContext] (.Server-13)  cctx:	group=0
+2023-10-23 00:38:06,842 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=138994(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,844 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486842] time[1] tag[omero.bulkLoadRenderingSettings]
+2023-10-23 00:38:06,844 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486844] time[0] tag[omero.createAndPrepareMissingRenderingSettings]
+2023-10-23 00:38:06,845 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486844] time[1] tag[omero.bulkLoadMetadata]
+2023-10-23 00:38:06,846 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486844] time[1] tag[omero.loadMetadataByDimensionPool]
+2023-10-23 00:38:06,847 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.display.Thumbnail,353
+2023-10-23 00:38:06,847 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486847] time[0] tag[omero.bulkLoadMetadata]
+2023-10-23 00:38:06,848 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486847] time[0] tag[omero.loadMetadataByDimensionPool]
+2023-10-23 00:38:06,848 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486846] time[1] tag[omero.createMissingThumbnailMetadata]
+2023-10-23 00:38:06,848 INFO  [    ome.security.basic.BasicEventContext] (.Server-13)  cctx:	group=0
+2023-10-23 00:38:06,854 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=138995(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,855 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486855] time[0] tag[omero._createThumbnail(thumbMetaData)]
+2023-10-23 00:38:06,874 DEBUG [                   loci.formats.Memoizer] (.Server-13) loaded memo file: /OMERO/BioFormatsCache/OMERO/ManagedRepository/root_0/2023-10/23/00-38-01.517/.HP-237690_IMC_220725-160200_SSF-SO_ROI_003_16bit.ome.tiff.bfmemo (42763 bytes)
+2023-10-23 00:38:06,874 DEBUG [                   loci.formats.Memoizer] (.Server-13) start[1698021486864] time[10] tag[loci.formats.Memoizer.loadMemo]
+2023-10-23 00:38:06,875 DEBUG [                   loci.formats.Memoizer] (.Server-13) start[1698021486864] time[10] tag[loci.formats.Memoizer.setId]
+2023-10-23 00:38:06,878 INFO  [       ome.logic.JavaImageScalingService] (.Server-13) Scaling to: 87x96
+2023-10-23 00:38:06,885 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486878] time[6] tag[java-image-scaling.resampleOp]
+2023-10-23 00:38:06,886 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486855] time[31] tag[omero._createThumbnail]
+2023-10-23 00:38:06,891 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486838] time[53] tag[omero.call.success.ome.services.ThumbnailBean.createThumbnailsByLongestSideSet]
+2023-10-23 00:38:06,891 INFO  [                 org.perf4j.TimingLogger] (2-thread-1) start[1698021486755] time[135] tag[omero.import.request.thumbs]
+2023-10-23 00:38:06,893 INFO  [    ome.security.basic.BasicEventContext] (.Server-11)  cctx:	group=0
+2023-10-23 00:38:06,894 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,895 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021486892] time[2] tag[omero.call.success.ome.logic.QueryImpl.get]
+2023-10-23 00:38:06,896 INFO  [    ome.security.basic.BasicEventContext] (l.Server-6)  cctx:	group=0
+2023-10-23 00:38:06,904 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=138996(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,906 INFO  [       ome.security.basic.CurrentDetails] (l.Server-6) Adding log:UPDATE,class ome.model.core.OriginalFile,6745
+2023-10-23 00:38:06,910 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021486896] time[14] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]
+2023-10-23 00:38:06,910 INFO  [                 org.perf4j.TimingLogger] (2-thread-1) start[1698021486755] time[154] tag[omero.import.request.step]
+2023-10-23 00:38:06,910 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Step 3
+2023-10-23 00:38:06,912 INFO  [    ome.security.basic.BasicEventContext] (.Server-14)  cctx:	group=0
+2023-10-23 00:38:06,913 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,913 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021486911] time[2] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$6.doWork]
+2023-10-23 00:38:06,915 INFO  [    ome.security.basic.BasicEventContext] (.Server-12)  cctx:	group=0
+2023-10-23 00:38:06,916 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,917 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021486914] time[2] tag[omero.call.success.ome.logic.QueryImpl.get]
+2023-10-23 00:38:06,918 INFO  [    ome.security.basic.BasicEventContext] (.Server-13)  cctx:	group=0
+2023-10-23 00:38:06,922 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=138997(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,923 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:UPDATE,class ome.model.core.OriginalFile,6745
+2023-10-23 00:38:06,926 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1698021486918] time[8] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]
+2023-10-23 00:38:06,927 INFO  [                 org.perf4j.TimingLogger] (2-thread-1) start[1698021486910] time[16] tag[omero.import.request.step]
+2023-10-23 00:38:06,927 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Step 4
+2023-10-23 00:38:06,928 INFO  [    ome.security.basic.BasicEventContext] (.Server-11)  cctx:	group=0
+2023-10-23 00:38:06,929 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,931 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1698021486927] time[3] tag[omero.call.success.ome.logic.QueryImpl.get]
+2023-10-23 00:38:06,932 INFO  [    ome.security.basic.BasicEventContext] (l.Server-2)  cctx:	group=0
+2023-10-23 00:38:06,937 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=138998(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,939 INFO  [       ome.security.basic.CurrentDetails] (l.Server-2) Adding log:UPDATE,class ome.model.core.OriginalFile,6745
+2023-10-23 00:38:06,943 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021486932] time[11] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]
+2023-10-23 00:38:06,943 INFO  [                 org.perf4j.TimingLogger] (2-thread-1) start[1698021486927] time[16] tag[omero.import.request.step]
+2023-10-23 00:38:06,949 INFO  [    ome.security.basic.BasicEventContext] (l.Server-6)  cctx:	group=0
+2023-10-23 00:38:06,954 INFO  [         ome.security.basic.EventHandler] (l.Server-6)  Auth:	user=0,group=0,event=138999(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,957 INFO  [                 org.perf4j.TimingLogger] (l.Server-6) start[1698021486948] time[9] tag[omero.call.success.ome.services.RawFileBean.close]
+2023-10-23 00:38:06,958 DEBUG [                omero.util.ServantHolder] (l.Server-6) Removed omero.api._RawFileStoreTie@ea8f1f1e from omero.util.ServantHolder@653627b9 as 93827e0b-3926-4bf5-b536-7d7c3f2309d5omero.api.RawFileStore
+2023-10-23 00:38:06,958 INFO  [                      omero.cmd.SessionI] (l.Server-6) Unregistered servant:1d451b7e-6b08-4e47-85c5-6edd5995961c/93827e0b-3926-4bf5-b536-7d7c3f2309d5omero.api.RawFileStore(omero.api._RawFileStoreTie@ea8f1f1e)
+2023-10-23 00:38:06,959 INFO  [    ome.security.basic.BasicEventContext] (.Server-14)  cctx:	group=0
+2023-10-23 00:38:06,963 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=139000(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,966 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1698021486958] time[7] tag[omero.call.success.ome.services.RawPixelsBean.close]
+2023-10-23 00:38:06,966 DEBUG [                omero.util.ServantHolder] (.Server-14) Removed omero.api._RawPixelsStoreTie@b86ec832 from omero.util.ServantHolder@653627b9 as 5e9c62a2-d08c-4a41-904b-dffd7a6522a9omero.api.RawPixelsStore
+2023-10-23 00:38:06,966 INFO  [                      omero.cmd.SessionI] (.Server-14) Unregistered servant:1d451b7e-6b08-4e47-85c5-6edd5995961c/5e9c62a2-d08c-4a41-904b-dffd7a6522a9omero.api.RawPixelsStore(omero.api._RawPixelsStoreTie@b86ec832)
+2023-10-23 00:38:06,968 INFO  [    ome.security.basic.BasicEventContext] (.Server-12)  cctx:	group=0
+2023-10-23 00:38:06,969 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,969 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021486967] time[2] tag[omero.call.success.ome.services.ThumbnailBean.close]
+2023-10-23 00:38:06,970 DEBUG [                omero.util.ServantHolder] (.Server-12) Removed omero.api._ThumbnailStoreTie@c036892a from omero.util.ServantHolder@653627b9 as 700c9e05-a8e3-45a7-b0be-c7ad668e3c18omero.api.ThumbnailStore
+2023-10-23 00:38:06,970 INFO  [                      omero.cmd.SessionI] (.Server-12) Unregistered servant:1d451b7e-6b08-4e47-85c5-6edd5995961c/700c9e05-a8e3-45a7-b0be-c7ad668e3c18omero.api.ThumbnailStore(omero.api._ThumbnailStoreTie@c036892a)
+2023-10-23 00:38:06,970 DEBUG [                omero.util.ServantHolder] (.Server-13) Removed omero.api._MetadataStoreTie@ff024b3e from omero.util.ServantHolder@653627b9 as 605a8890-af4c-4f96-b631-53b4c6baef2comero.api.MetadataStore
+2023-10-23 00:38:06,970 INFO  [                      omero.cmd.SessionI] (.Server-13) Unregistered servant:1d451b7e-6b08-4e47-85c5-6edd5995961c/605a8890-af4c-4f96-b631-53b4c6baef2comero.api.MetadataStore(omero.api._MetadataStoreTie@ff024b3e)
+2023-10-23 00:38:06,970 INFO  [    o.s.blitz.repo.ManagedImportRequestI] (2-thread-1) Cleaning up import.
+2023-10-23 00:38:06,974 INFO  [         ome.security.basic.EventHandler] (l.Server-2)  Auth:	user=0,group=0,event=null(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,975 INFO  [                 org.perf4j.TimingLogger] (l.Server-2) start[1698021486972] time[3] tag[omero.call.success.ome.logic.QueryImpl.get]
+2023-10-23 00:38:06,984 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=139001(User),sess=1d451b7e-6b08-4e47-85c5-6edd5995961c
+2023-10-23 00:38:06,986 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:UPDATE,class ome.model.core.OriginalFile,6745
+2023-10-23 00:38:06,990 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1698021486979] time[10] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]

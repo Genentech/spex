@@ -1,0 +1,8 @@
+{
+  "name": "Clustering",
+  "description": "Clustering",
+  "order": 1,
+  "stages": [
+    "Cluster"
+  ]
+}

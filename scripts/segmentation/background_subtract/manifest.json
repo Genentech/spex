@@ -1,0 +1,59 @@
+{
+  "name": "background_subtract",
+  "description": "Subtract background signal from other channels",
+  "stage": "2",
+  "params": {
+    "image": {
+      "name": "image",
+      "description": "Multichannel numpy array (C,X,Y)",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    },
+    "all_channels": {
+      "name": "all_channels",
+      "description": "List of all channels of a image",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    },
+    "ch": {
+      "name": "channel",
+      "description": "background channel",
+      "type": "channel",
+      "required": true,
+      "default": ""
+    },
+    "top": {
+      "name": "threshold",
+      "description": "Ignore pixels above this threshold",
+      "type": "int",
+      "required": true,
+      "default": 0
+    },
+    "subtraction": {
+      "name": "subtraction",
+      "description": "How many intensity units to subtract from other channels",
+      "type": "int",
+      "required": true,
+      "default": 0
+    }
+  },
+  "script_path": "background_subtract",
+  "return": {
+    "image": {
+      "type": "array",
+      "description": "Background corrected Image Stack",
+      "name": "image"
+    }
+  },
+  "depends_and_script": [
+    "load_image",
+    "load_tiff"
+  ],
+  "libs": [
+    "scikit-image==0.18.1",
+    "numpy",
+    "dask==2021.11.1"
+  ]
+}

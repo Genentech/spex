@@ -1,0 +1,31 @@
+{
+  "name": "qfmatch",
+  "description": "qfmatch",
+  "stage": "5",
+  "params": {
+
+    "bin_size": {
+      "name": "bin_size",
+      "description": "Minimal bin size for binning the mix",
+      "type": "int",
+      "default": 60
+    }
+  },
+  "script_path": "qfmatch",
+  "return": {
+    "qfmatch": {
+      "name": "qfmatch",
+      "type": "array",
+      "description": "ready plt"
+    }
+  },
+  "depends_and_script": ["dml"],
+  "libs": [
+    "matplotlib==3.4.3",
+    "umap-learn==0.5.1",
+    "numpy==1.20.3",
+    "scipy==1.7.1",
+    "networkx==2.6.3",
+    "pandas==1.3.4"
+  ]
+}

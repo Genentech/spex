@@ -1,0 +1,1 @@
+{"version":30707,"tasks":{"addDefaultUserOther":true,"createSystemCollectionsAndIndices":true,"renameReplicationApplierStateFiles":true,"upgradeArangoSearch0_1":true}}

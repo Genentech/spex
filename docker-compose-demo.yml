@@ -14,7 +14,7 @@ services:
         aliases:
           - spex-arangodb
     ports:
-      - '8529:8529'
+      - '8529'
     env_file:
       - ./.env.common.demo
     volumes:
@@ -29,7 +29,7 @@ services:
         aliases:
           - spex-redisjson
     ports:
-      - '6379:6379'
+      - '6379'
   # End of Infrastructures
 
   database:
@@ -78,7 +78,7 @@ services:
     container_name: spex-ms-omero-sessions
     restart: always
     ports:
-      - '8080:8080'
+      - '8080'
     env_file:
       - ./.env.common.demo
     environment:
@@ -150,7 +150,7 @@ services:
       - ${HOST_DATA_STORAGE}:/DATA_STORAGE
       - ./scripts:/DATA_STORAGE/Scripts
     ports:
-      - '80:80'
+      - '80'
     env_file:
       - ./.env.common.demo
     depends_on:

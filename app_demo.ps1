@@ -1,6 +1,3 @@
-# Этот файл предназначен для демонстрационных целей.
-
-# Важное сообщение
 $alert = @"
 IMPORTANT:
 Don't forget to set environment variables HOST_DATA_STORAGE
@@ -30,8 +27,8 @@ switch ($args[0]) {
     "up" {
         Write-Host "Up..."
         docker-compose -f $DOCKER_COMPOSE_FILE up -d
-        Start-Sleep -Seconds 120
-        Start-Process "http://127.0.0.1:3000"
+        Start-Sleep -Seconds 60
+        Invoke-Expression "start http://127.0.0.1:3000"
     }
     "down" {
         Write-Host "Down..."

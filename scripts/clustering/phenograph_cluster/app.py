@@ -2,7 +2,7 @@ import phenograph
 import anndata as ad
 import re
 from anndata import AnnData
-import pickle
+import dill as pickle
 import scanpy as sc
 from scipy.stats import zscore
 from scipy.stats.mstats import winsorize

@@ -8,7 +8,7 @@
       "description": "The radius used to construct the neighborhood content vector, in microns",
       "type": "float",
       "required": true,
-      "default": 50
+      "default": 49.9
     },
     "n_perms": {
       "name": "n_perms",
@@ -27,11 +27,18 @@
     }
   },
   "depends_and_script": [
-    "phenograph_cluster"
+    "phenograph_cluster",
+    "clustering"
   ],
+
   "libs": [
-    "scanpy==1.9.3",
+    "--use-feature=2020-resolver",
     "squidpy==1.2.3",
-    "leidenalg==0.9.1"
+    "scanpy==1.9.3",
+    "leidenalg==0.9.1",
+    "anndata==0.8.0",
+    "pandas==2.2.0",
+    "numpy==1.22.4",
+    "--upgrade setuptools"
   ]
 }

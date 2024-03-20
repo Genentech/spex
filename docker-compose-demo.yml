@@ -18,7 +18,7 @@ services:
     env_file:
       - ./.env.common.demo
     volumes:
-      - ~/spex_db:/var/lib/arangodb3
+      - ~/arango_demo/spex_db:/var/lib/arangodb3
 
   redisjson:
     image: "ghcr.io/genentech/spex.redis:latest"

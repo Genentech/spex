@@ -1,0 +1,29 @@
+{
+  "name": "Rename clusters",
+  "description": "Rename cluster names",
+  "stage": "1",
+  "params":{
+    "radius": {
+      "name": "clusters",
+      "description": "Cluster names",
+      "type": "table",
+      "required": true,
+      "default": 49.9
+    }
+  },
+  "script_path": "rename_clusters",
+  "return": {
+    "adata": {
+      "name": "adata",
+      "type": "table",
+      "description": "h5ad with Cluster names renamed"
+    }
+  },
+  "depends_and_script": [
+    "phenograph_cluster",
+    "clustering"
+  ],
+  "libs": [
+    "anndata==0.8.2"
+  ]
+}

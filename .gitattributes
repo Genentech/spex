@@ -1,2 +1,4 @@
 *.tiff filter=lfs diff=lfs merge=lfs -text
 *.h5ad filter=lfs diff=lfs merge=lfs -text
+arango_demo/spex_db/* -text
+arango_demo/spex_db/**/* -text

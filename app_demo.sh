@@ -17,7 +17,7 @@ if [ -f "./set_env.local" ]; then
     source ./set_env.local
 else
     echo "WARNING: set_env.local not found. Using current directory as HOST_DATA_STORAGE."
-    export HOST_DATA_STORAGE=$(pwd)
+    export HOST_DATA_STORAGE=$(pwd)/demo_data
 fi
 
 if [ -z "$HOST_DATA_STORAGE" ]; then

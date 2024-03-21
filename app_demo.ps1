@@ -13,7 +13,7 @@ if (Test-Path $envFile) {
     . $envFile
 } else {
     Write-Host "WARNING: set_env.local.ps1 not found. Using current directory as HOST_DATA_STORAGE."
-    $env:HOST_DATA_STORAGE = $PWD.Path
+    $env:HOST_DATA_STORAGE = Join-Path $PWD.Path "demo_data"
 }
 
 if ([string]::IsNullOrEmpty($env:HOST_DATA_STORAGE)) {

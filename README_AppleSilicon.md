@@ -12,28 +12,32 @@ Before beginning the installation process, ensure your system meets the followin
 
 - **3000, 80 Ports:** If, for some reason, ports are not open in Docker, you may need to open ports 80 and 3000 for Docker, or you might have to disable the firewall.
 
+- In the Docker settings under Resources, set a minimum of **8 GB Memory** limit.
+
 
 # Installation Guide for macOS
 
 ## 1. Open the Terminal application
 
-<details open><summary><b>To open the Terminal on a Mac:</b></summary>
-
+To open the Terminal on a Mac:
 - Open Launchpad.
 - Click on the Other folder.
 - Click on the Terminal icon to open it.
+
+<details><summary><b>Terminal on a Mac:</b></summary>
 
 ![Lfs](workflow/images/apple/Terminal.png)
 </details>
 
 ## 2. Install Homebrew
 
-<details open><summary><b>Install homebrew if you don't already have it</b></summary>
-
+Install homebrew if you don't already have it
 - During the Homebrew installation process, you may need to confirm that you want to proceed. Just follow the on-screen instructions.
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
+<details><summary><b>Homebrew installation screen</b></summary>
 
   ![Lfs](workflow/images/apple/Homebrew_install.png)
 
@@ -51,54 +55,64 @@ brew --version
 
 ## 3. Install Git
 
-<details open><summary><b>Download and install Git for macOs</b></summary>
+Download and install Git for macOs</b>
 
 ```
 brew install git
 ```
 More info [Git for macOs](https://git-scm.com/download/mac).
 
+<details><summary><b>Git installation screen</b></summary>
+
+![Lfs](workflow/images/apple/brew_install_git.png)
+
 </details>
 
 ## 4. Install Git LFS for Managing Large Files
 
-<details open><summary><b>Install Git LFS</b></summary>
-
 ```
 brew install git-lfs
 ```
-![Lfs](workflow/images/apple/brew_install_git-lfs.png)
 
 More info [Git for Git LFS](https://git-lfs.com/).
+
+<details><summary><b>Git LFS installation screen</b></summary>
+
+![Lfs](workflow/images/apple/brew_install_git-lfs.png)
+
+
 </details>
 
 
 <a id="bundle-installation"></a>
 ## 5. Bundle Installation
 
-<details open><summary><b>Go to the folder where you will deploy the project:</b></summary>
+Go to the folder where you will deploy the project:
 To navigate to a project folder in the terminal, you can use the cd command, which stands for "change directory."
 
 ```
 cd my_project
 ```
-</details>
 
-<details open><summary><b>To configure Git LFS run the following command:</b></summary>
+
+To configure Git LFS run the following command:
 
 ```
 git lfs install
 ```
+<details><summary><b>Git LFS runing screen</b></summary>
 
 ![Lfs](workflow/images/apple/git_lfs_install.png)
 </details>
 
-<details open><summary><b>For the production bundle of the application, clone the repository:</b></summary>
+For the production bundle of the application, clone the repository:
 
 ```
 git clone https://github.com/Genentech/spex_demo.git .
 ```
 Wait for the process to complete. The total size of all downloaded project files should be around 10 gigabytes.
+
+<details><summary><b>Git cloning screen</b></summary>
 
 ![Lfs](workflow/images/apple/git_clone.png)
 </details>
@@ -117,16 +131,29 @@ Wait for the process to complete. The total size of all downloaded project files
 
 
 ## 7. Run application demo script:
-<details> <summary><b>Execute the application demo script:</b></summary>
+Execute the application demo script:
 
+- Set permissions to execute the script
+  ```
+  chmod +x app_demo_silicon.sh
+  ``` 
+- Run the script
   ```
   ./app_demo_silicon.sh up
   ```
+
+<details> <summary><b>Runing athe script screen</b></summary>
+
 ![run](workflow/images/apple/app_demo_silicon.png)
+
+</details>
+
+
+
 - Wait for the download to complete. If the download does not complete or hangs due to unstable connection, stop the process control+C and start the process again.
 - After the download is complete and the necessary images and containers are created, you should see 11 containers in the Docker application.
-- As a result, a browser window should open asking you to log in. If the page is not displayed? Try waiting 5-10 minutes and reload the page. Perhaps the containers have not all had time to collect yet.
-</details>
+- As a result, a browser window should open asking you to log in. If the page is not displayed? Try waiting 5-15 minutes and reload the page. Perhaps the containers have not all had time to collect yet.
+
 
 **For open application you can start host "http://127.0.0.1:3000" in your browser,
 at the first start, I would wait 5 minutes for the services to be initialized, such as the Omero server and frontend.**

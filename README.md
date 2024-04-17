@@ -11,6 +11,9 @@ Before beginning the installation process, ensure your system meets the followin
 - **Internet Connection:** A stable internet connection is necessary throughout the installation process and for initial task executions. This ensures timely downloads and updates.
 
 - **3000, 80 Ports:** If, for some reason, ports are not open in Docker, you may need to open ports 80 and 3000 for Docker, or you might have to disable the firewall.
+
+- In the Docker settings under Resources, set a minimum of **8 GB Memory** limit.
+
   <details><summary>Allow windows</summary>
 
   ![allow](workflow/images/allow.png)
@@ -75,6 +78,7 @@ git clone https://github.com/Genentech/spex_demo.git .
 
 ## Install Docker desktop on your Local Machine
 - Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- **Important:** In the Docker settings under Resources, set a minimum of 8 GB Memory limit.
 
 ### Run application demo script:
 <details> <summary><b>Ubuntu</b></summary>

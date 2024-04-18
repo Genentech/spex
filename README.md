@@ -170,7 +170,7 @@ git clone https://github.com/Genentech/spex_demo.git .
   ./app_demo_silicon.sh up
   ```
 
-![run](workflow/images/apple/app_demo_silicon.png)
+![run](workflow/images/apple/app_demo_silicon!.png)
 
 </details>
 <details open> <summary><b>Windows</b></summary>

@@ -1,16 +1,15 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # This file for demo purposes.
 
 alert="
 IMPORTANT:
-don't forget to set environment variables HOST_DATA_STORAGE
+Don't forget to set environment variables HOST_DATA_STORAGE
 (it should be a path on your local machine)
 
 The script awaits that you will do it in the ./set_env.local file
 content of file for example:
-$ cat ./set_env.local
-export HOST_DATA_STORAGE=/home/user/data
+\$HOST_DATA_STORAGE=\"/path/to/your/data\"
 "
 
 if [ -f "./set_env.local" ]; then
@@ -25,12 +24,14 @@ if [ -z "$HOST_DATA_STORAGE" ]; then
     exit 1
 fi
 
-DOCKER_COMPOSE_FILE=docker-compose-demo.yml
+DOCKER_COMPOSE_FILE="docker-compose-demo.yml"
 
 case "$1" in
     "up")
         echo "Up..."
         docker-compose -f $DOCKER_COMPOSE_FILE up -d
+        sleep 60
+        open http://127.0.0.1:3000
         ;;
     "down")
         echo "Down..."
@@ -49,7 +50,7 @@ case "$1" in
         docker-compose -f $DOCKER_COMPOSE_FILE rm -f -s -v
         ;;
     *)
-        echo "Usage: ./${0##*/} {build|build-frontend|up|down|stop|start|rm}"
+        echo "Usage: ${0##*/} {up|down|stop|start|rm}"
         echo "
 up - up the microservices (similar: docker-compose up -d)
 down - down the microservices (similar: docker-compose down)

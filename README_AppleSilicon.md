@@ -6,7 +6,7 @@ Before beginning the installation process, ensure your system meets the followin
 
 - **Storage Space:** A minimum of 70 GB of free disk space is required for installation and initial operations. It is recommended to have up to 150 GB of free space to accommodate future updates and data management needs.
 
-- **Memory:** At least 16 GB of RAM is essential for smooth performance during installation and runtime.
+- **Memory:** At least 8 GB of RAM is essential for smooth performance during installation and runtime.
 
 - **Internet Connection:** A stable internet connection is necessary throughout the installation process and for initial task executions. This ensures timely downloads and updates.
 
@@ -14,45 +14,30 @@ Before beginning the installation process, ensure your system meets the followin
 
 - In the Docker settings under Resources, set a minimum of **8 GB Memory** limit.
 
-  <details><summary>Allow windows</summary>
 
-  ![allow](workflow/images/allow.png)
-  <details>
----
-</details>
+# Installation Guide for macOS
 
-# Installation Guide
-#### The installation guide for macOs can be found [here](README_AppleSilicon.md).
-## Install Git LFS for Managing Large Files
-
-<details><summary><b> Ubuntu</b></summary>
-
-- Open Terminal and run:
-```
-sudo apt update
-sudo apt install git-lfs
-```
-</details>
-
-
-<details><summary><b> MacOs Apple silicon</b></summary>
-
-#### 1. Open the Terminal application
+## 1. Open the Terminal application
 
 To open the Terminal on a Mac:
 - Open Launchpad.
 - Click on the Other folder.
 - Click on the Terminal icon to open it.
 
-![Lfs](workflow/images/apple/Terminal.png)
+<details><summary><b>Terminal on a Mac:</b></summary>
 
-#### 2. Install Homebrew
+![Lfs](workflow/images/apple/Terminal.png)
+</details>
+
+## 2. Install Homebrew
 
 Install homebrew if you don't already have it
 - During the Homebrew installation process, you may need to confirm that you want to proceed. Just follow the on-screen instructions.
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
+<details><summary><b>Homebrew installation screen</b></summary>
 
   ![Lfs](workflow/images/apple/Homebrew_install.png)
 
@@ -66,8 +51,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew --version
 ```
 ![Lfs](workflow/images/apple/Homebrew_install_2.png)
+</details>
 
-#### 3. Install Git
+## 3. Install Git
 
 Download and install Git for macOs</b>
 
@@ -76,10 +62,13 @@ brew install git
 ```
 More info [Git for macOs](https://git-scm.com/download/mac).
 
+<details><summary><b>Git installation screen</b></summary>
+
 ![Lfs](workflow/images/apple/brew_install_git.png)
 
+</details>
 
-#### 4. Install Git LFS for Managing Large Files
+## 4. Install Git LFS for Managing Large Files
 
 ```
 brew install git-lfs
@@ -87,79 +76,62 @@ brew install git-lfs
 
 More info [Git for Git LFS](https://git-lfs.com/).
 
+<details><summary><b>Git LFS installation screen</b></summary>
+
 ![Lfs](workflow/images/apple/brew_install_git-lfs.png)
 
 
 </details>
 
 
-<details open><summary><b> Windows</b></summary>
-
-- Download and install [Git for Windows](https://git-scm.com/download/win).
-- if you have installed Git for Windows, you can check if running installs Git LFS:
-- Open Powershell as administrator and run:
-```
-git lfs install
-```
-if you have this output:
-```
-Git LFS initialized.
-```
-![Lfs](workflow/images/1_1.png)
-
-
-go to the next step [Bundle installation](#bundle-installation)
-, if not
-- Download and install [Git LFS](https://git-lfs.github.com/)
-  follow the instructions for Windows installation.
-</details>
-
-
-
-
 <a id="bundle-installation"></a>
-## Bundle Installation
+## 5. Bundle Installation
 
-- Go to the folder where you will deploy the project.
+Go to the folder where you will deploy the project:
 To navigate to a project folder in the terminal, you can use the cd command, which stands for "change directory."
 
 ```
 cd my_project
 ```
 
-- To set up Git LFS, open the terminal and run the following command:
+
+To configure Git LFS run the following command:
+
 ```
 git lfs install
 ```
+<details><summary><b>Git LFS runing screen</b></summary>
 
-- For the production bundle of the application, clone the repository:
+![Lfs](workflow/images/apple/git_lfs_install.png)
+</details>
+
+For the production bundle of the application, clone the repository:
+
 ```
 git clone https://github.com/Genentech/spex_demo.git .
 ```
-- Wait for the process to complete. The total size of all downloaded project files should be around 10 gigabytes.
-![clone](workflow/images/1_2.png)
+Wait for the process to complete. The total size of all downloaded project files should be around 10 gigabytes.
 
-<details>
-  <summary><b>Set executable permissions (Ubuntu): </b></summary>
+<details><summary><b>Git cloning screen</b></summary>
 
-  ```
-  chmod -R +x .
-  ```
+![Lfs](workflow/images/apple/git_clone.png)
 </details>
 
-## Install Docker desktop on your Local Machine
+
+## 6. Install Docker desktop on your Local Machine
 - Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop)
+  
+<details> <summary><b>Important: In the Docker settings under Resources, set a minimum of 8 GB Memory limit.</b></summary>
 
-### Run application demo script:
-<details> <summary><b>Ubuntu</b></summary>
-
-- Execute the application demo script:
-  ```
-  ./app_demo.sh up
-  ```
+![run](workflow/images/apple/Docker_settings.png)
+- Wait for the download to complete. If the download does not complete or hangs due to unstable connection, stop the process control+C and start the process again.
+- After the download is complete and the necessary images and containers are created, you should see 11 containers in the Docker application.
+- As a result, a browser window should open asking you to log in. If the page is not displayed? Try waiting 5-10 minutes and reload the page. Perhaps the containers have not all had time to collect yet.
 </details>
-  <details><summary><b> MacOs Apple silicon</b></summary>
-  Execute the application demo script:
+
+
+## 7. Run application demo script:
+Execute the application demo script:
 
 - Set permissions to execute the script
   ```
@@ -170,35 +142,24 @@ git clone https://github.com/Genentech/spex_demo.git .
   ./app_demo_silicon.sh up
   ```
 
+<details> <summary><b>Runing athe script screen</b></summary>
+
 ![run](workflow/images/apple/app_demo_silicon.png)
 
 </details>
-<details open> <summary><b>Windows</b></summary>
-
-- Run the PowerShell script by command as administrator:
-  ```
-  PowerShell.exe -ExecutionPolicy Unrestricted -File .\app_demo.ps1 up
-  ```
-
-  ![run](workflow/images/1_3.png)
-  <details><summary><b>windows 11 time to up</b></summary>
-    
-    ![win11timeline](workflow/images/w11timeline.png)
-  </details>
-</details>
 
 
-Wait for the download to complete. If the download does not complete or hangs due to unstable connection, stop the process control+C and start the process again.
 
-After the download is complete and the necessary images and containers are created, you should see 11 containers in the Docker application.
+- Wait for the download to complete. If the download does not complete or hangs due to unstable connection, stop the process control+C and start the process again.
+- After the download is complete and the necessary images and containers are created, you should see 11 containers in the Docker application.
+- As a result, a browser window should open asking you to log in. If the page is not displayed? Try waiting 5-15 minutes and reload the page. Perhaps the containers have not all had time to collect yet.
 
-As a result, a browser window should open asking you to log in. If the page is not displayed? Try waiting 5-15 minutes and reload the page. Perhaps the containers have not all had time to collect yet.
 
-
-**for open application you can start host "http://127.0.0.1:3000" in your browser,
+**For open application you can start host "http://127.0.0.1:3000" in your browser,
 at the first start, I would wait 5 minutes for the services to be initialized, such as the Omero server and frontend.**
 
-for more information about SPEX can use
+
+## Working workflow
 
 <details> <summary><b>Working workflow</b></summary>
 

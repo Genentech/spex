@@ -22,7 +22,7 @@ Before beginning the installation process, ensure your system meets the followin
 </details>
 
 # Installation Guide
-#### The installation guide for macOs can be found [here](README_AppleSilicon.md).
+
 ## Install Git LFS for Managing Large Files
 
 <details><summary><b> Ubuntu</b></summary>

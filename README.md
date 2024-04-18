@@ -149,10 +149,6 @@ git clone https://github.com/Genentech/spex_demo.git .
 
 ## Install Docker desktop on your Local Machine
 - Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop)
-<details> <summary><b>Important: In the Docker settings under Resources, set a minimum of 8 GB Memory limit.</b></summary>
-
-![run](workflow/images/apple/Docker_settings.png)
-</details>
 
 ### Run application demo script:
 <details> <summary><b>Ubuntu</b></summary>

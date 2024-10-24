@@ -40,13 +40,16 @@
     "depends_and_script": [
         "dimensionality_reduction"
     ],
-    "conda": ["python=3.10"],
+    "conda": ["python=3.11"],
     "libs": [
-        "scanpy==1.9.8",
-        "pandas==2.2.0",
-        "anndata==0.10.5"
+        "scanpy==1.9.4",
+        "cmake==3.28.3"
     ],
     "conda_pip": [
-        "leidenalg==0.8.10"
+        "pandas==2.2.0",
+        "anndata==0.9.2",
+        "python-igraph",
+        "leidenalg==0.8.10",
+        "louvain"
     ]
 }

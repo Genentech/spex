@@ -1,0 +1,8 @@
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Pipenv (segmentation)" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="Pipenv (segmentation)" project-jdk-type="Python SDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

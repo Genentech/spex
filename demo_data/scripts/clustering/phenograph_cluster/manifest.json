@@ -39,6 +39,13 @@
       "required": true,
       "default": "winsorize"
     },
+    "cofactor": {
+      "name": "cofactor work only if transformation is arcsin",
+      "description": "cofactor work only if transformation is arcsin",
+      "type": "int",
+      "required": false,
+      "default": 5
+    },
     "knn": {
       "name": "knn",
       "description": "knn",
@@ -58,14 +65,15 @@
   "depends_and_script": [
     "feature_extraction"
   ],
-  "depends_or_script": ["load_anndata"],
+  "depends_or_script": [],
   "conda": ["python=3.9"],
   "conda_pip": [
     "phenograph==1.5.7",
     "pandas==2.2.0",
     "scanpy==1.9.3",
-    "scipy==1.9.1",
-    "anndata==0.8.0"
+    "scipy==1.9.1 --only-binary=:all:",
+    "anndata==0.8.0",
+    "matplotlib==3.7.2"
   ],
   "libs": [
     "numpy"

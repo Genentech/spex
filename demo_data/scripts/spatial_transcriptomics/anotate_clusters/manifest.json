@@ -1,0 +1,40 @@
+{
+    "name": "anotate_clusters",
+    "description": "Anotate clusters",
+    "stage": "1",
+    "params":{
+    },
+    "script_path": "anotate_clusters",
+    "return": {
+        "pathways":{
+            "name": "pathway_data",
+            "type": "adata",
+            "description": "h5ad with .obsm['pathways']"
+        }
+
+    },
+    "depends_and_script": [
+        "clustering",
+        "differential_expression"
+    ],
+    "conda": ["python=3.11"],
+    "libs": [
+        "rpy2==3.5.11",
+        "fftw",
+        "cmake==3.28.3",
+        "requests==2.31.0",
+        "cython==3.0.8",
+        "decoupler==1.7.0"
+    ],
+    "conda_pip": [
+        "scanpy==1.9.4",
+        "scvi-tools==1.0.3",
+        "pegasuspy[all]==1.8.0",
+        "fitsne==1.2.1",
+        "jax==0.4.14",
+        "jaxlib==0.4.14",
+        "jaxtyping==0.2.21",
+        "flax==0.7.4",
+        "pandas==1.5.3"
+    ]
+}

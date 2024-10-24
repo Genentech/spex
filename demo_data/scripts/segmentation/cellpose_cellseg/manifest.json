@@ -28,14 +28,14 @@
       "description": "Typical size of nucleus",
       "type": "int",
       "required": true,
-      "default": 0
+      "default": 12
     },
     "scaling": {
       "name": "scaling",
       "description": "Integer value scaling",
       "type": "int",
       "required": true,
-      "default": 0
+      "default": 1
     }
   },
   "script_path": "cellpose_cellseg",
@@ -58,6 +58,6 @@
     "opencv-python==4.5.1.48",
     "opencv-python-headless==4.5.2.54",
     "cellpose==0.6.5",
-    "numpy==1.21"
+    "numpy==1.22"
   ]
 }

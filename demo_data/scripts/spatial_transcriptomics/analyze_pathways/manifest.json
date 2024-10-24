@@ -1,0 +1,41 @@
+{
+    "name": "analyze_pathways",
+    "description": "Pathway analysis",
+    "stage": "1",
+    "params":{
+
+    },
+    "script_path": "analyze_pathways",
+    "return": {
+        "pathways":{
+            "name": "pathway_data",
+            "type": "adata",
+            "description": "h5ad with .obsm['pathways']"
+        }
+
+    },
+    "depends_and_script": [
+        "differential_expression"
+    ],
+    "conda": ["python=3.11"],
+    "conda_pip": [
+        "scanpy==1.9.4",
+        "scvi-tools==1.0.3",
+        "pegasuspy[all]==1.8.0",
+        "fitsne==1.2.1",
+        "jax==0.4.14",
+        "jaxlib==0.4.14",
+        "jaxtyping==0.2.21",
+        "flax==0.7.4",
+        "pandas==2.2.0"
+    ],
+    "libs": [
+        "decoupler-py==1.7.0",
+        "rpy2==3.5.11",
+        "fftw",
+        "cmake==3.28.3",
+        "requests==2.31.0",
+        "cython==3.0.8",
+        "numpy==1.23.4"
+    ]
+}

@@ -1,0 +1,428 @@
+2024-10-11 09:24:59,029 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699016] time[13] tag[omero.import.process.init]
+2024-10-11 09:24:59,036 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=28020(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:24:59,042 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.jobs.UploadJob,3083
+2024-10-11 09:24:59,042 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.jobs.JobOriginalFileLink,4884
+2024-10-11 09:24:59,053 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.jobs.MetadataImportJob,3084
+2024-10-11 09:24:59,063 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.jobs.PixelDataJob,3085
+2024-10-11 09:24:59,072 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.jobs.ThumbnailGenerationJob,3086
+2024-10-11 09:24:59,078 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.jobs.IndexingJob,3087
+2024-10-11 09:24:59,082 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699082] time[0] tag[omero.repo.internal_register.find_repo_files]
+2024-10-11 09:24:59,085 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.core.OriginalFile,3068
+2024-10-11 09:24:59,085 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699083] time[2] tag[omero.repo.create_original_file.save]
+2024-10-11 09:24:59,085 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699085] time[0] tag[omero.repo.create_original_file.internal_mkdir]
+2024-10-11 09:24:59,085 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699085] time[0] tag[omero.repo.internal_register.load]
+2024-10-11 09:24:59,086 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699086] time[0] tag[omero.repo.internal_register.sort]
+2024-10-11 09:24:59,086 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699082] time[3] tag[omero.repo.save_fileset.register]
+2024-10-11 09:24:59,086 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699086] time[0] tag[omero.repo.save_fileset.update_fileset_entries]
+2024-10-11 09:24:59,088 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.fs.Fileset,210
+2024-10-11 09:24:59,088 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.fs.FilesetJobLink,246
+2024-10-11 09:24:59,088 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.fs.FilesetJobLink,247
+2024-10-11 09:24:59,088 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.fs.FilesetJobLink,248
+2024-10-11 09:24:59,089 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.fs.FilesetJobLink,249
+2024-10-11 09:24:59,089 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.fs.FilesetJobLink,250
+2024-10-11 09:24:59,089 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:INSERT,class ome.model.fs.FilesetEntry,210
+2024-10-11 09:24:59,092 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699086] time[5] tag[omero.repo.save_fileset.save]
+2024-10-11 09:24:59,981 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699030] time[950] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$8.doWork]
+2024-10-11 09:24:59,982 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699030] time[952] tag[omero.repo.save_fileset]
+2024-10-11 09:24:59,983 INFO  [                      omero.cmd.SessionI] (.Server-12) Added servant to adapter: 83be404c-1957-46d4-a36b-f9feca68dcf3/f20599a4-2285-4796-b973-c4d305099957-ManagedImportProcessI(omero.grid._ImportProcessTie@3916833b)
+2024-10-11 09:24:59,983 DEBUG [                omero.util.ServantHolder] (.Server-12) Added omero.grid._ImportProcessTie@3916833b to omero.util.ServantHolder@149b3864 as f20599a4-2285-4796-b973-c4d305099957-ManagedImportProcessI
+2024-10-11 09:24:59,983 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638699030] time[953] tag[omero.import.process.create]
+2024-10-11 09:24:59,992 INFO  [         ome.security.basic.EventHandler] (.Server-15)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:24:59,996 INFO  [                 org.perf4j.TimingLogger] (.Server-15) start[1728638699990] time[6] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$2.doWork]
+2024-10-11 09:25:00,000 INFO  [         ome.security.basic.EventHandler] (.Server-15)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,003 INFO  [                 org.perf4j.TimingLogger] (.Server-15) start[1728638699997] time[5] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$4.doWork]
+2024-10-11 09:25:00,007 INFO  [         ome.security.basic.EventHandler] (.Server-15)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,011 INFO  [                 org.perf4j.TimingLogger] (.Server-15) start[1728638700004] time[6] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$6.doWork]
+2024-10-11 09:25:00,012 INFO  [    ome.security.basic.BasicEventContext] (.Server-15)  cctx:	group=0
+2024-10-11 09:25:00,013 INFO  [         ome.security.basic.EventHandler] (.Server-15)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,016 INFO  [                 org.perf4j.TimingLogger] (.Server-15) start[1728638700011] time[4] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$1.doWork]
+2024-10-11 09:25:00,016 INFO  [                      omero.cmd.SessionI] (.Server-15) Added servant to adapter: 83be404c-1957-46d4-a36b-f9feca68dcf3/c7f7627b-dfb1-47e9-b953-b801ffc8933d-RepoRawFileStoreI(omero.api._RawFileStoreTie@3cd2256e)
+2024-10-11 09:25:00,016 DEBUG [                omero.util.ServantHolder] (.Server-15) Added omero.api._RawFileStoreTie@3cd2256e to omero.util.ServantHolder@149b3864 as c7f7627b-dfb1-47e9-b953-b801ffc8933d-RepoRawFileStoreI
+2024-10-11 09:25:00,016 INFO  [                 org.perf4j.TimingLogger] (.Server-15) start[1728638699990] time[26] tag[omero.import.process.opener]
+2024-10-11 09:25:00,016 INFO  [                 org.perf4j.TimingLogger] (.Server-15) start[1728638699990] time[26] tag[omero.import.process.uploader]
+2024-10-11 09:25:00,022 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,023 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638700020] time[3] tag[omero.call.success.ome.services.RawFileBean.write]
+2024-10-11 09:25:00,102 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,109 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638700101] time[7] tag[omero.call.success.ome.services.RawFileBean.write]
+2024-10-11 09:25:00,174 INFO  [         ome.security.basic.EventHandler] (l.Server-9)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,181 INFO  [                 org.perf4j.TimingLogger] (l.Server-9) start[1728638700172] time[8] tag[omero.call.success.ome.services.RawFileBean.write]
+2024-10-11 09:25:00,237 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,243 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1728638700235] time[7] tag[omero.call.success.ome.services.RawFileBean.write]
+2024-10-11 09:25:00,293 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,299 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638700292] time[7] tag[omero.call.success.ome.services.RawFileBean.write]
+2024-10-11 09:25:00,356 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,363 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638700354] time[9] tag[omero.call.success.ome.services.RawFileBean.write]
+2024-10-11 09:25:00,397 INFO  [         ome.security.basic.EventHandler] (l.Server-9)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,402 INFO  [                 org.perf4j.TimingLogger] (l.Server-9) start[1728638700395] time[6] tag[omero.call.success.ome.services.RawFileBean.write]
+2024-10-11 09:25:00,421 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=28036(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,434 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638700421] time[12] tag[omero.services.file.flush]
+2024-10-11 09:25:00,457 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638700434] time[22] tag[omero.services.file.checksum]
+2024-10-11 09:25:00,458 INFO  [       ome.security.basic.CurrentDetails] (.Server-11) Adding log:UPDATE,class ome.model.core.OriginalFile,3068
+2024-10-11 09:25:00,459 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638700457] time[1] tag[omero.services.file.finalize]
+2024-10-11 09:25:00,462 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638700404] time[57] tag[omero.call.success.ome.services.RawFileBean.save]
+2024-10-11 09:25:00,468 INFO  [         ome.security.basic.EventHandler] (.Server-10)  Auth:	user=0,group=0,event=28039(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,472 INFO  [                 org.perf4j.TimingLogger] (.Server-10) start[1728638700464] time[8] tag[omero.call.success.ome.services.RawFileBean.close]
+2024-10-11 09:25:00,472 DEBUG [                omero.util.ServantHolder] (.Server-10) Removed omero.api._RawFileStoreTie@3cd2256e from omero.util.ServantHolder@149b3864 as c7f7627b-dfb1-47e9-b953-b801ffc8933d-RepoRawFileStoreI
+2024-10-11 09:25:00,472 INFO  [                      omero.cmd.SessionI] (.Server-10) Unregistered servant:83be404c-1957-46d4-a36b-f9feca68dcf3/c7f7627b-dfb1-47e9-b953-b801ffc8933d-RepoRawFileStoreI(omero.api._RawFileStoreTie@3cd2256e)
+2024-10-11 09:25:00,475 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,475 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638700474] time[1] tag[omero.call.success.ome.services.blitz.impl.ServiceFactoryI$3.doWork]
+2024-10-11 09:25:00,481 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638700475] time[5] tag[omero.import.process.checksum]
+2024-10-11 09:25:00,485 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=28042(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,503 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:UPDATE,class ome.model.jobs.UploadJob,3083
+2024-10-11 09:25:00,508 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638700482] time[26] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$12.doWork]
+2024-10-11 09:25:00,510 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,512 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638700508] time[3] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$2.doWork]
+2024-10-11 09:25:00,517 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,518 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638700512] time[5] tag[omero.call.success.ome.services.blitz.repo.RepositoryDaoImpl$4.doWork]
+2024-10-11 09:25:00,518 INFO  [       ome.formats.importer.ImportConfig] (.Server-14) OMERO.blitz Version: 5.7.3
+2024-10-11 09:25:00,518 INFO  [       ome.formats.importer.ImportConfig] (.Server-14) Bioformats version: 7.3.0 revision: acc4b6de79e55275b5e6c8200f8458f6d93c9ba0 date: 18 April 2024
+2024-10-11 09:25:00,520 INFO  [                      omero.cmd.SessionI] (.Server-14) Added servant to adapter: 83be404c-1957-46d4-a36b-f9feca68dcf3/IHandle9635f4d8-5400-42fa-8b6d-cfd64603b2e9(omero.cmd._HandleTie@5c0b2252)
+2024-10-11 09:25:00,520 DEBUG [                omero.util.ServantHolder] (.Server-14) Added omero.cmd._HandleTie@5c0b2252 to omero.util.ServantHolder@149b3864 as IHandle9635f4d8-5400-42fa-8b6d-cfd64603b2e9
+2024-10-11 09:25:00,520 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638700520] time[0] tag[omero.background.submit]
+2024-10-11 09:25:00,520 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638700481] time[38] tag[omero.import.process.submit]
+2024-10-11 09:25:00,522 DEBUG [                omero.util.ServantHolder] (.Server-11) Removed omero.grid._ImportProcessTie@3916833b from omero.util.ServantHolder@149b3864 as f20599a4-2285-4796-b973-c4d305099957-ManagedImportProcessI
+2024-10-11 09:25:00,522 INFO  [                      omero.cmd.SessionI] (.Server-11) Unregistered servant:83be404c-1957-46d4-a36b-f9feca68dcf3/f20599a4-2285-4796-b973-c4d305099957-ManagedImportProcessI(omero.grid._ImportProcessTie@3916833b)
+2024-10-11 09:25:00,529 INFO  [    ome.formats.OMEROMetadataStoreClient] (-thread-10) Call context: {omero.group:0}
+2024-10-11 09:25:00,529 INFO  [    ome.formats.OMEROMetadataStoreClient] (-thread-10) Call context: {omero.logfilename:root_0/2024-10/11/09-24-58.883.log}
+2024-10-11 09:25:00,535 INFO  [    ome.security.basic.BasicEventContext] (.Server-15)  cctx:	group=0
+2024-10-11 09:25:00,536 INFO  [         ome.security.basic.EventHandler] (.Server-15)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,546 INFO  [                 org.perf4j.TimingLogger] (.Server-15) start[1728638700534] time[12] tag[omero.call.success.ome.logic.AdminImpl.getEventContext]
+2024-10-11 09:25:00,581 INFO  [    ome.formats.OMEROMetadataStoreClient] (-thread-10) Pinging session every 300s.
+2024-10-11 09:25:00,609 INFO  [                loci.formats.ImageReader] (-thread-10) IonpathMIBITiffReader initializing /OMERO/ManagedRepository/root_0/2024-10/11/09-24-58.883/TA459_multipleCores2_Run-4_Point4.tiff
+2024-10-11 09:25:00,610 INFO  [       loci.formats.in.MinimalTiffReader] (-thread-10) Reading IFDs
+2024-10-11 09:25:00,612 INFO  [       loci.formats.in.MinimalTiffReader] (-thread-10) Populating metadata
+2024-10-11 09:25:00,614 INFO  [          loci.formats.in.BaseTiffReader] (-thread-10) Populating OME metadata
+2024-10-11 09:25:00,620 INFO  [    ome.security.basic.BasicEventContext] (.Server-14)  cctx:	group=0
+2024-10-11 09:25:00,621 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,626 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638700619] time[6] tag[omero.call.success.ome.logic.QueryImpl.findAll]
+2024-10-11 09:25:00,631 INFO  [    ome.security.basic.BasicEventContext] (.Server-11)  cctx:	group=0
+2024-10-11 09:25:00,632 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,633 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638700630] time[3] tag[omero.call.success.ome.logic.QueryImpl.findAll]
+2024-10-11 09:25:00,635 INFO  [    ome.security.basic.BasicEventContext] (.Server-15)  cctx:	group=0
+2024-10-11 09:25:00,638 INFO  [         ome.security.basic.EventHandler] (.Server-15)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,639 INFO  [                 org.perf4j.TimingLogger] (.Server-15) start[1728638700635] time[4] tag[omero.call.success.ome.logic.QueryImpl.findAll]
+2024-10-11 09:25:00,640 INFO  [    ome.security.basic.BasicEventContext] (.Server-10)  cctx:	group=0
+2024-10-11 09:25:00,642 INFO  [         ome.security.basic.EventHandler] (.Server-10)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,643 INFO  [                 org.perf4j.TimingLogger] (.Server-10) start[1728638700640] time[3] tag[omero.call.success.ome.logic.QueryImpl.findAll]
+2024-10-11 09:25:00,685 DEBUG [                   loci.formats.Memoizer] (-thread-10) saved to temp file: /OMERO/BioFormatsCache/OMERO/ManagedRepository/root_0/2024-10/11/09-24-58.883/.TA459_multipleCores2_Run-4_Point4.tiff.bfmemo665193662531103241
+2024-10-11 09:25:00,685 DEBUG [                   loci.formats.Memoizer] (-thread-10) start[1728638700673] time[11] tag[loci.formats.Memoizer.saveMemo]
+2024-10-11 09:25:00,685 DEBUG [                   loci.formats.Memoizer] (-thread-10) saved memo file: /OMERO/BioFormatsCache/OMERO/ManagedRepository/root_0/2024-10/11/09-24-58.883/.TA459_multipleCores2_Run-4_Point4.tiff.bfmemo (50730 bytes)
+2024-10-11 09:25:00,686 DEBUG [                   loci.formats.Memoizer] (-thread-10) start[1728638700581] time[104] tag[loci.formats.Memoizer.setId]
+2024-10-11 09:25:00,686 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Image Count: 44
+2024-10-11 09:25:00,686 INFO  [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) File format: Ionpath MIBI
+2024-10-11 09:25:00,686 INFO  [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Base reader: loci.formats.in.IonpathMIBITiffReader
+2024-10-11 09:25:00,686 INFO  [                 org.perf4j.TimingLogger] (-thread-10) start[1728638700527] time[158] tag[omero.import.request.init]
+2024-10-11 09:25:00,686 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Step 0
+2024-10-11 09:25:00,687 WARN  [    ome.formats.model.ReferenceProcessor] (-thread-10) Unknown target class for LSID: Image:SIMS
+2024-10-11 09:25:00,687 INFO  [    ome.formats.OMEROMetadataStoreClient] (-thread-10) Handling # of containers: 91
+2024-10-11 09:25:00,690 INFO  [    ome.security.basic.BasicEventContext] (.Server-12)  cctx:	group=0
+2024-10-11 09:25:00,693 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,694 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638700689] time[5] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$4.doWork]
+2024-10-11 09:25:00,694 INFO  [    ome.formats.OMEROMetadataStoreClient] (-thread-10) Handling # of references: 1
+2024-10-11 09:25:00,695 INFO  [    ome.security.basic.BasicEventContext] (l.Server-9)  cctx:	group=0
+2024-10-11 09:25:00,696 INFO  [         ome.security.basic.EventHandler] (l.Server-9)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,696 INFO  [                 org.perf4j.TimingLogger] (l.Server-9) start[1728638700694] time[1] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$5.doWork]
+2024-10-11 09:25:00,699 INFO  [    ome.security.basic.BasicEventContext] (.Server-13)  cctx:	group=0
+2024-10-11 09:25:00,702 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=28047(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,713 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Image,210
+2024-10-11 09:25:00,714 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.containers.DatasetImageLink,210
+2024-10-11 09:25:00,714 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Pixels,210
+2024-10-11 09:25:00,715 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,947
+2024-10-11 09:25:00,715 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,947
+2024-10-11 09:25:00,716 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,948
+2024-10-11 09:25:00,716 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,948
+2024-10-11 09:25:00,716 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,949
+2024-10-11 09:25:00,717 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,949
+2024-10-11 09:25:00,717 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,950
+2024-10-11 09:25:00,718 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,950
+2024-10-11 09:25:00,718 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,951
+2024-10-11 09:25:00,719 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,951
+2024-10-11 09:25:00,719 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,952
+2024-10-11 09:25:00,719 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,952
+2024-10-11 09:25:00,719 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,953
+2024-10-11 09:25:00,720 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,953
+2024-10-11 09:25:00,720 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,954
+2024-10-11 09:25:00,720 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,954
+2024-10-11 09:25:00,721 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,955
+2024-10-11 09:25:00,721 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,955
+2024-10-11 09:25:00,721 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,956
+2024-10-11 09:25:00,722 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,956
+2024-10-11 09:25:00,722 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,957
+2024-10-11 09:25:00,722 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,957
+2024-10-11 09:25:00,723 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,958
+2024-10-11 09:25:00,723 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,958
+2024-10-11 09:25:00,723 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,959
+2024-10-11 09:25:00,724 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,959
+2024-10-11 09:25:00,724 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,960
+2024-10-11 09:25:00,724 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,960
+2024-10-11 09:25:00,725 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,961
+2024-10-11 09:25:00,725 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,961
+2024-10-11 09:25:00,725 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,962
+2024-10-11 09:25:00,726 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,962
+2024-10-11 09:25:00,726 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,963
+2024-10-11 09:25:00,726 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,963
+2024-10-11 09:25:00,727 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,964
+2024-10-11 09:25:00,727 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,964
+2024-10-11 09:25:00,728 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,965
+2024-10-11 09:25:00,728 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,965
+2024-10-11 09:25:00,729 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,966
+2024-10-11 09:25:00,729 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,966
+2024-10-11 09:25:00,729 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,967
+2024-10-11 09:25:00,730 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,967
+2024-10-11 09:25:00,730 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,968
+2024-10-11 09:25:00,730 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,968
+2024-10-11 09:25:00,731 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,969
+2024-10-11 09:25:00,731 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,969
+2024-10-11 09:25:00,732 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,970
+2024-10-11 09:25:00,732 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,970
+2024-10-11 09:25:00,732 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,971
+2024-10-11 09:25:00,733 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,971
+2024-10-11 09:25:00,733 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,972
+2024-10-11 09:25:00,733 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,972
+2024-10-11 09:25:00,734 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,973
+2024-10-11 09:25:00,734 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,973
+2024-10-11 09:25:00,734 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,974
+2024-10-11 09:25:00,735 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,974
+2024-10-11 09:25:00,735 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,975
+2024-10-11 09:25:00,736 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,975
+2024-10-11 09:25:00,736 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,976
+2024-10-11 09:25:00,736 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,976
+2024-10-11 09:25:00,737 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,977
+2024-10-11 09:25:00,737 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,977
+2024-10-11 09:25:00,737 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,978
+2024-10-11 09:25:00,738 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,978
+2024-10-11 09:25:00,738 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,979
+2024-10-11 09:25:00,738 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,979
+2024-10-11 09:25:00,738 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,980
+2024-10-11 09:25:00,739 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,980
+2024-10-11 09:25:00,739 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,981
+2024-10-11 09:25:00,739 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,981
+2024-10-11 09:25:00,739 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,982
+2024-10-11 09:25:00,740 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,982
+2024-10-11 09:25:00,740 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,983
+2024-10-11 09:25:00,740 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,983
+2024-10-11 09:25:00,740 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,984
+2024-10-11 09:25:00,741 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,984
+2024-10-11 09:25:00,741 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,985
+2024-10-11 09:25:00,742 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,985
+2024-10-11 09:25:00,742 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,986
+2024-10-11 09:25:00,742 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,986
+2024-10-11 09:25:00,743 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,987
+2024-10-11 09:25:00,744 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,987
+2024-10-11 09:25:00,744 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,988
+2024-10-11 09:25:00,745 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,988
+2024-10-11 09:25:00,745 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,989
+2024-10-11 09:25:00,746 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,989
+2024-10-11 09:25:00,746 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.LogicalChannel,990
+2024-10-11 09:25:00,747 INFO  [       ome.security.basic.CurrentDetails] (.Server-13) Adding log:INSERT,class ome.model.core.Channel,990
+2024-10-11 09:25:00,760 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1728638700703] time[56] tag[omero.saveImportGraph]
+2024-10-11 09:25:00,774 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1728638700698] time[76] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$3.doWork]
+2024-10-11 09:25:00,777 INFO  [                 org.perf4j.TimingLogger] (-thread-10) start[1728638700686] time[91] tag[omero.import.request.metadata]
+2024-10-11 09:25:00,779 INFO  [    ome.security.basic.BasicEventContext] (.Server-10)  cctx:	group=0
+2024-10-11 09:25:00,780 INFO  [         ome.security.basic.EventHandler] (.Server-10)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,782 INFO  [                 org.perf4j.TimingLogger] (.Server-10) start[1728638700778] time[4] tag[omero.call.success.ome.logic.QueryImpl.get]
+2024-10-11 09:25:00,785 INFO  [    ome.security.basic.BasicEventContext] (l.Server-9)  cctx:	group=0
+2024-10-11 09:25:00,791 INFO  [         ome.security.basic.EventHandler] (l.Server-9)  Auth:	user=0,group=0,event=28054(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:00,793 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:UPDATE,class ome.model.core.OriginalFile,3067
+2024-10-11 09:25:00,798 INFO  [                 org.perf4j.TimingLogger] (l.Server-9) start[1728638700784] time[13] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]
+2024-10-11 09:25:00,798 INFO  [                 org.perf4j.TimingLogger] (-thread-10) start[1728638700686] time[112] tag[omero.import.request.step]
+2024-10-11 09:25:00,798 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Step 1
+2024-10-11 09:25:00,799 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:0 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:00,869 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:1 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:00,922 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:2 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:00,984 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:3 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,074 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:4 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,183 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:5 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,243 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:6 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,310 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:7 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,363 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:8 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,424 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:9 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,507 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:10 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,562 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:11 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,612 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:12 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,673 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:13 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,730 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:14 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,792 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:15 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,859 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:16 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,906 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:17 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:01,975 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:18 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,028 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:19 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,111 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:20 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,180 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:21 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,243 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:22 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,297 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:23 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,371 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:24 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,433 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:25 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,522 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:26 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,598 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:27 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,670 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:28 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,734 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:29 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,804 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:30 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,872 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:31 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:02,932 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:32 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,005 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:33 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,098 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:34 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,190 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:35 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,254 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:36 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,324 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:37 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,392 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:38 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,478 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:39 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,546 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:40 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,653 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:41 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,739 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:42 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,824 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Plane:43 X:0 Y:0 TileWidth:2048 TileHeight:2048 arrayBuf.length:8388608
+2024-10-11 09:25:03,922 INFO  [    ome.security.basic.BasicEventContext] (.Server-14)  cctx:	group=0
+2024-10-11 09:25:03,927 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=28123(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:03,932 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638703920] time[12] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$7.doWork]
+2024-10-11 09:25:03,936 INFO  [    ome.security.basic.BasicEventContext] (l.Server-9)  cctx:	group=0
+2024-10-11 09:25:03,940 INFO  [         ome.security.basic.EventHandler] (l.Server-9)  Auth:	user=0,group=0,event=28124(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,087 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:UPDATE,class ome.model.core.Pixels,210
+2024-10-11 09:25:04,441 INFO  [                 org.perf4j.TimingLogger] (l.Server-9) start[1728638703935] time[506] tag[omero.call.success.ome.logic.UpdateImpl.saveArray]
+2024-10-11 09:25:04,444 INFO  [    ome.security.basic.BasicEventContext] (.Server-12)  cctx:	group=0
+2024-10-11 09:25:04,452 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=28131(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,501 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638704442] time[58] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$2.doWork]
+2024-10-11 09:25:04,501 INFO  [                 org.perf4j.TimingLogger] (-thread-10) start[1728638700798] time[3702] tag[omero.import.request.pixels]
+2024-10-11 09:25:04,502 INFO  [    ome.security.basic.BasicEventContext] (l.Server-4)  cctx:	group=0
+2024-10-11 09:25:04,503 INFO  [         ome.security.basic.EventHandler] (l.Server-4)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,504 INFO  [                 org.perf4j.TimingLogger] (l.Server-4) start[1728638704501] time[2] tag[omero.call.success.ome.logic.QueryImpl.get]
+2024-10-11 09:25:04,506 INFO  [    ome.security.basic.BasicEventContext] (.Server-15)  cctx:	group=0
+2024-10-11 09:25:04,510 INFO  [         ome.security.basic.EventHandler] (.Server-15)  Auth:	user=0,group=0,event=28135(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,512 INFO  [       ome.security.basic.CurrentDetails] (.Server-15) Adding log:UPDATE,class ome.model.core.OriginalFile,3067
+2024-10-11 09:25:04,517 INFO  [                 org.perf4j.TimingLogger] (.Server-15) start[1728638704505] time[12] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]
+2024-10-11 09:25:04,518 INFO  [                 org.perf4j.TimingLogger] (-thread-10) start[1728638700798] time[3719] tag[omero.import.request.step]
+2024-10-11 09:25:04,518 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Step 2
+2024-10-11 09:25:04,527 INFO  [    ome.security.basic.BasicEventContext] (l.Server-9)  cctx:	group=0
+2024-10-11 09:25:04,531 INFO  [         ome.security.basic.EventHandler] (l.Server-9)  Auth:	user=0,group=0,event=28136(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,538 INFO  [                 org.perf4j.TimingLogger] (l.Server-9) start[1728638704531] time[6] tag[omero.loadPixels]
+2024-10-11 09:25:04,546 INFO  [                 org.perf4j.TimingLogger] (l.Server-9) start[1728638704541] time[4] tag[omero.loadRenderingSettingsByUser]
+2024-10-11 09:25:04,561 DEBUG [                   loci.formats.Memoizer] (l.Server-9) start[1728638704549] time[11] tag[loci.formats.Memoizer.loadMemo]
+2024-10-11 09:25:04,576 INFO  [                loci.formats.ImageReader] (l.Server-9) IonpathMIBITiffReader initializing /OMERO/ManagedRepository/root_0/2024-10/11/09-24-58.883/TA459_multipleCores2_Run-4_Point4.tiff
+2024-10-11 09:25:04,576 INFO  [       loci.formats.in.MinimalTiffReader] (l.Server-9) Reading IFDs
+2024-10-11 09:25:04,577 INFO  [       loci.formats.in.MinimalTiffReader] (l.Server-9) Populating metadata
+2024-10-11 09:25:04,579 INFO  [          loci.formats.in.BaseTiffReader] (l.Server-9) Populating OME metadata
+2024-10-11 09:25:04,586 DEBUG [                   loci.formats.Memoizer] (l.Server-9) saved to temp file: /OMERO/BioFormatsCache/OMERO/ManagedRepository/root_0/2024-10/11/09-24-58.883/.TA459_multipleCores2_Run-4_Point4.tiff.bfmemo4501326757543748859
+2024-10-11 09:25:04,586 DEBUG [                   loci.formats.Memoizer] (l.Server-9) start[1728638704584] time[2] tag[loci.formats.Memoizer.saveMemo]
+2024-10-11 09:25:04,586 DEBUG [                   loci.formats.Memoizer] (l.Server-9) saved memo file: /OMERO/BioFormatsCache/OMERO/ManagedRepository/root_0/2024-10/11/09-24-58.883/.TA459_multipleCores2_Run-4_Point4.tiff.bfmemo (50721 bytes)
+2024-10-11 09:25:04,586 DEBUG [                   loci.formats.Memoizer] (l.Server-9) start[1728638704549] time[36] tag[loci.formats.Memoizer.setId]
+2024-10-11 09:25:04,600 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.QuantumDef,210
+2024-10-11 09:25:04,601 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.RenderingDef,210
+2024-10-11 09:25:04,602 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,947
+2024-10-11 09:25:04,602 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,948
+2024-10-11 09:25:04,602 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,949
+2024-10-11 09:25:04,603 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,950
+2024-10-11 09:25:04,603 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,951
+2024-10-11 09:25:04,603 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,952
+2024-10-11 09:25:04,603 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,953
+2024-10-11 09:25:04,604 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,954
+2024-10-11 09:25:04,604 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,955
+2024-10-11 09:25:04,604 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,956
+2024-10-11 09:25:04,605 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,957
+2024-10-11 09:25:04,605 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,958
+2024-10-11 09:25:04,605 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,959
+2024-10-11 09:25:04,605 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,960
+2024-10-11 09:25:04,606 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,961
+2024-10-11 09:25:04,606 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,962
+2024-10-11 09:25:04,606 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,963
+2024-10-11 09:25:04,607 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,964
+2024-10-11 09:25:04,607 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,965
+2024-10-11 09:25:04,608 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,966
+2024-10-11 09:25:04,608 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,967
+2024-10-11 09:25:04,609 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,968
+2024-10-11 09:25:04,609 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,969
+2024-10-11 09:25:04,609 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,970
+2024-10-11 09:25:04,609 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,971
+2024-10-11 09:25:04,610 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,972
+2024-10-11 09:25:04,610 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,973
+2024-10-11 09:25:04,610 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,974
+2024-10-11 09:25:04,610 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,975
+2024-10-11 09:25:04,610 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,976
+2024-10-11 09:25:04,611 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,977
+2024-10-11 09:25:04,611 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,978
+2024-10-11 09:25:04,611 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,979
+2024-10-11 09:25:04,611 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,980
+2024-10-11 09:25:04,612 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,981
+2024-10-11 09:25:04,612 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,982
+2024-10-11 09:25:04,612 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,983
+2024-10-11 09:25:04,612 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,984
+2024-10-11 09:25:04,613 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,985
+2024-10-11 09:25:04,613 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,986
+2024-10-11 09:25:04,613 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,987
+2024-10-11 09:25:04,613 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,988
+2024-10-11 09:25:04,613 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,989
+2024-10-11 09:25:04,614 INFO  [       ome.security.basic.CurrentDetails] (l.Server-9) Adding log:INSERT,class ome.model.display.ChannelBinding,990
+2024-10-11 09:25:04,626 INFO  [                 org.perf4j.TimingLogger] (l.Server-9) start[1728638704595] time[31] tag[omero.resetDefaultsInSet.saveAndReturn]
+2024-10-11 09:25:04,626 INFO  [                 org.perf4j.TimingLogger] (l.Server-9) start[1728638704531] time[95] tag[omero.resetDefaultsInSet]
+2024-10-11 09:25:04,635 INFO  [                 org.perf4j.TimingLogger] (l.Server-9) start[1728638704519] time[116] tag[omero.call.success.ome.logic.RenderingSettingsImpl.resetDefaultsInSet]
+2024-10-11 09:25:04,637 INFO  [    ome.security.basic.BasicEventContext] (.Server-11)  cctx:	group=0
+2024-10-11 09:25:04,643 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=28140(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,645 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704643] time[1] tag[omero.bulkLoadRenderingSettings]
+2024-10-11 09:25:04,645 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704645] time[0] tag[omero.createAndPrepareMissingRenderingSettings]
+2024-10-11 09:25:04,647 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704645] time[1] tag[omero.bulkLoadMetadata]
+2024-10-11 09:25:04,647 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704645] time[2] tag[omero.loadMetadataByDimensionPool]
+2024-10-11 09:25:04,648 INFO  [       ome.security.basic.CurrentDetails] (.Server-11) Adding log:INSERT,class ome.model.display.Thumbnail,210
+2024-10-11 09:25:04,651 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704650] time[0] tag[omero.bulkLoadMetadata]
+2024-10-11 09:25:04,651 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704650] time[0] tag[omero.loadMetadataByDimensionPool]
+2024-10-11 09:25:04,651 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704647] time[3] tag[omero.createMissingThumbnailMetadata]
+2024-10-11 09:25:04,651 INFO  [    ome.security.basic.BasicEventContext] (.Server-11)  cctx:	group=0
+2024-10-11 09:25:04,656 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=28141(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,657 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704657] time[0] tag[omero._createThumbnail(thumbMetaData)]
+2024-10-11 09:25:04,705 DEBUG [                   loci.formats.Memoizer] (.Server-11) loaded memo file: /OMERO/BioFormatsCache/OMERO/ManagedRepository/root_0/2024-10/11/09-24-58.883/.TA459_multipleCores2_Run-4_Point4.tiff.bfmemo (50721 bytes)
+2024-10-11 09:25:04,705 DEBUG [                   loci.formats.Memoizer] (.Server-11) start[1728638704679] time[25] tag[loci.formats.Memoizer.loadMemo]
+2024-10-11 09:25:04,705 DEBUG [                   loci.formats.Memoizer] (.Server-11) start[1728638704679] time[26] tag[loci.formats.Memoizer.setId]
+2024-10-11 09:25:04,776 INFO  [       ome.logic.JavaImageScalingService] (.Server-11) Scaling to: 96x96
+2024-10-11 09:25:04,809 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704777] time[32] tag[java-image-scaling.resampleOp]
+2024-10-11 09:25:04,811 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704657] time[154] tag[omero._createThumbnail]
+2024-10-11 09:25:04,817 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704636] time[180] tag[omero.call.success.ome.services.ThumbnailBean.createThumbnailsByLongestSideSet]
+2024-10-11 09:25:04,817 INFO  [                 org.perf4j.TimingLogger] (-thread-10) start[1728638704518] time[298] tag[omero.import.request.thumbs]
+2024-10-11 09:25:04,819 INFO  [    ome.security.basic.BasicEventContext] (.Server-10)  cctx:	group=0
+2024-10-11 09:25:04,820 INFO  [         ome.security.basic.EventHandler] (.Server-10)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,822 INFO  [                 org.perf4j.TimingLogger] (.Server-10) start[1728638704818] time[3] tag[omero.call.success.ome.logic.QueryImpl.get]
+2024-10-11 09:25:04,825 INFO  [    ome.security.basic.BasicEventContext] (.Server-14)  cctx:	group=0
+2024-10-11 09:25:04,830 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=28142(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,833 INFO  [       ome.security.basic.CurrentDetails] (.Server-14) Adding log:UPDATE,class ome.model.core.OriginalFile,3067
+2024-10-11 09:25:04,839 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638704823] time[16] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]
+2024-10-11 09:25:04,840 INFO  [                 org.perf4j.TimingLogger] (-thread-10) start[1728638704518] time[321] tag[omero.import.request.step]
+2024-10-11 09:25:04,840 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Step 3
+2024-10-11 09:25:04,841 INFO  [    ome.security.basic.BasicEventContext] (l.Server-9)  cctx:	group=0
+2024-10-11 09:25:04,843 INFO  [         ome.security.basic.EventHandler] (l.Server-9)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,847 INFO  [                 org.perf4j.TimingLogger] (l.Server-9) start[1728638704840] time[7] tag[omero.call.success.ome.services.blitz.impl.MetadataStoreI$6.doWork]
+2024-10-11 09:25:04,849 INFO  [    ome.security.basic.BasicEventContext] (.Server-13)  cctx:	group=0
+2024-10-11 09:25:04,851 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,853 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1728638704848] time[4] tag[omero.call.success.ome.logic.QueryImpl.get]
+2024-10-11 09:25:04,855 INFO  [    ome.security.basic.BasicEventContext] (.Server-12)  cctx:	group=0
+2024-10-11 09:25:04,860 INFO  [         ome.security.basic.EventHandler] (.Server-12)  Auth:	user=0,group=0,event=28143(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,863 INFO  [       ome.security.basic.CurrentDetails] (.Server-12) Adding log:UPDATE,class ome.model.core.OriginalFile,3067
+2024-10-11 09:25:04,869 INFO  [                 org.perf4j.TimingLogger] (.Server-12) start[1728638704854] time[15] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]
+2024-10-11 09:25:04,870 INFO  [                 org.perf4j.TimingLogger] (-thread-10) start[1728638704840] time[29] tag[omero.import.request.step]
+2024-10-11 09:25:04,870 DEBUG [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Step 4
+2024-10-11 09:25:04,871 INFO  [    ome.security.basic.BasicEventContext] (.Server-15)  cctx:	group=0
+2024-10-11 09:25:04,873 INFO  [         ome.security.basic.EventHandler] (.Server-15)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,874 INFO  [                 org.perf4j.TimingLogger] (.Server-15) start[1728638704871] time[3] tag[omero.call.success.ome.logic.QueryImpl.get]
+2024-10-11 09:25:04,875 INFO  [    ome.security.basic.BasicEventContext] (.Server-11)  cctx:	group=0
+2024-10-11 09:25:04,879 INFO  [         ome.security.basic.EventHandler] (.Server-11)  Auth:	user=0,group=0,event=28144(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,880 INFO  [       ome.security.basic.CurrentDetails] (.Server-11) Adding log:UPDATE,class ome.model.core.OriginalFile,3067
+2024-10-11 09:25:04,887 INFO  [                 org.perf4j.TimingLogger] (.Server-11) start[1728638704875] time[11] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]
+2024-10-11 09:25:04,887 INFO  [                 org.perf4j.TimingLogger] (-thread-10) start[1728638704870] time[16] tag[omero.import.request.step]
+2024-10-11 09:25:04,895 INFO  [    ome.security.basic.BasicEventContext] (.Server-10)  cctx:	group=0
+2024-10-11 09:25:04,900 INFO  [         ome.security.basic.EventHandler] (.Server-10)  Auth:	user=0,group=0,event=28145(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,905 INFO  [                 org.perf4j.TimingLogger] (.Server-10) start[1728638704894] time[11] tag[omero.call.success.ome.services.RawFileBean.close]
+2024-10-11 09:25:04,905 DEBUG [                omero.util.ServantHolder] (.Server-10) Removed omero.api._RawFileStoreTie@7c131904 from omero.util.ServantHolder@149b3864 as cb15b8a9-23bf-4d87-9ca4-8638fbf1c153omero.api.RawFileStore
+2024-10-11 09:25:04,906 INFO  [                      omero.cmd.SessionI] (.Server-10) Unregistered servant:83be404c-1957-46d4-a36b-f9feca68dcf3/cb15b8a9-23bf-4d87-9ca4-8638fbf1c153omero.api.RawFileStore(omero.api._RawFileStoreTie@7c131904)
+2024-10-11 09:25:04,912 INFO  [    ome.security.basic.BasicEventContext] (.Server-14)  cctx:	group=0
+2024-10-11 09:25:04,916 INFO  [         ome.security.basic.EventHandler] (.Server-14)  Auth:	user=0,group=0,event=28146(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,920 INFO  [                 org.perf4j.TimingLogger] (.Server-14) start[1728638704906] time[13] tag[omero.call.success.ome.services.RawPixelsBean.close]
+2024-10-11 09:25:04,920 DEBUG [                omero.util.ServantHolder] (.Server-14) Removed omero.api._RawPixelsStoreTie@8c98ddfb from omero.util.ServantHolder@149b3864 as 6f14c8e6-179d-47a8-9a12-668e7d35e7e8omero.api.RawPixelsStore
+2024-10-11 09:25:04,920 INFO  [                      omero.cmd.SessionI] (.Server-14) Unregistered servant:83be404c-1957-46d4-a36b-f9feca68dcf3/6f14c8e6-179d-47a8-9a12-668e7d35e7e8omero.api.RawPixelsStore(omero.api._RawPixelsStoreTie@8c98ddfb)
+2024-10-11 09:25:04,921 INFO  [    ome.security.basic.BasicEventContext] (.Server-13)  cctx:	group=0
+2024-10-11 09:25:04,923 INFO  [         ome.security.basic.EventHandler] (.Server-13)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,923 INFO  [                 org.perf4j.TimingLogger] (.Server-13) start[1728638704920] time[3] tag[omero.call.success.ome.services.ThumbnailBean.close]
+2024-10-11 09:25:04,924 DEBUG [                omero.util.ServantHolder] (.Server-13) Removed omero.api._ThumbnailStoreTie@66ed06b7 from omero.util.ServantHolder@149b3864 as 779038ae-b4dd-4a48-a9cd-bf88f22e5acbomero.api.ThumbnailStore
+2024-10-11 09:25:04,924 INFO  [                      omero.cmd.SessionI] (.Server-13) Unregistered servant:83be404c-1957-46d4-a36b-f9feca68dcf3/779038ae-b4dd-4a48-a9cd-bf88f22e5acbomero.api.ThumbnailStore(omero.api._ThumbnailStoreTie@66ed06b7)
+2024-10-11 09:25:04,924 DEBUG [                omero.util.ServantHolder] (l.Server-4) Removed omero.api._MetadataStoreTie@32cafa0a from omero.util.ServantHolder@149b3864 as 9c7ef58f-689b-4e81-9a72-fea6f8789a11omero.api.MetadataStore
+2024-10-11 09:25:04,924 INFO  [                      omero.cmd.SessionI] (l.Server-4) Unregistered servant:83be404c-1957-46d4-a36b-f9feca68dcf3/9c7ef58f-689b-4e81-9a72-fea6f8789a11omero.api.MetadataStore(omero.api._MetadataStoreTie@32cafa0a)
+2024-10-11 09:25:04,924 INFO  [    o.s.blitz.repo.ManagedImportRequestI] (-thread-10) Cleaning up import.
+2024-10-11 09:25:04,930 INFO  [         ome.security.basic.EventHandler] (.Server-15)  Auth:	user=0,group=0,event=null(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,931 INFO  [                 org.perf4j.TimingLogger] (.Server-15) start[1728638704928] time[3] tag[omero.call.success.ome.logic.QueryImpl.get]
+2024-10-11 09:25:04,941 INFO  [         ome.security.basic.EventHandler] (.Server-10)  Auth:	user=0,group=0,event=28147(User),sess=83be404c-1957-46d4-a36b-f9feca68dcf3
+2024-10-11 09:25:04,946 INFO  [       ome.security.basic.CurrentDetails] (.Server-10) Adding log:UPDATE,class ome.model.core.OriginalFile,3067
+2024-10-11 09:25:04,952 INFO  [                 org.perf4j.TimingLogger] (.Server-10) start[1728638704934] time[17] tag[omero.call.success.ome.logic.UpdateImpl.saveObject]

@@ -35,13 +35,12 @@
         }
     },
     "depends_and_script": [
-        "load_anndata",
-        "feature_extraction"
+        "load_anndata"
     ],
     "conda": ["python=3.11"],
     "libs": [
-        "scanpy==1.9.8",
-        "scipy==1.12.0",
-        "pandas==2.2.0"
+        "scanpy==1.9.4",
+        "scipy==1.11.1",
+        "pandas==1.5.3"
     ]
 }

@@ -18,10 +18,6 @@ def reduce_dimensionality(adata, prefilter=False,  method='pca', mdist=0.5, n_ne
     #method: PCA, scVI, and diffusion maps supported. (Diffusion map will run PCA first.)
     #n_neighbors: number of neighbors for KNN graph construction
     #latent_dim: Number of components/dimensions in reduced representation
-    if latent_dim == 0:
-        latent_dim = 1
-    if n_neighbors == 0:
-        n_neighbors = None
 
     #Prefiltering genes and cells
     if prefilter:
@@ -54,7 +50,7 @@ def reduce_dimensionality(adata, prefilter=False,  method='pca', mdist=0.5, n_ne
     }
 
     print('Doing dimensionality reduction...')
-    if method == 'scvi':
+    if method=='scvi':
         counts = adata.raw.to_adata()
         counts.layers['counts'] = counts.X
 
@@ -68,7 +64,7 @@ def reduce_dimensionality(adata, prefilter=False,  method='pca', mdist=0.5, n_ne
 
         adata.obsm['X_scvi'] = vae.get_latent_representation()
 
-    elif method == 'pca' or method == 'diff_map':
+    elif method=='pca' or method=='diff_map':
         sc.pp.pca(adata, n_comps=latent_dim, use_highly_variable=False)
 
     pdat = UnimodalData(adata)
@@ -128,10 +124,10 @@ def run(**kwargs):
 
     prefilter = kwargs.get('prefilter')
     method = kwargs.get('method')
-    mdist = kwargs.get('min_dist')
-    n_neighbors = kwargs.get('n_neighbors')
-    latent_dim = kwargs.get('latent_dim')
+    # mdist = kwargs.get('min_dist')
+    # n_neighbors = kwargs.get('n_neighbors')
+    # latent_dim = kwargs.get('latent_dim')
 
-    out = reduce_dimensionality(adata, prefilter, method, mdist, n_neighbors, latent_dim)
-
+    # out = reduce_dimensionality(adata, prefilter, method)
+    out = reduce_dimensionality(adata, prefilter=False,  method='pca')
     return {'adata': out}

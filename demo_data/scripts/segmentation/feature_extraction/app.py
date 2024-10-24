@@ -20,11 +20,10 @@ def parse_channel_list(channel_list, all_channels):
         if isinstance(item, str):
             item = re.sub("[^0-9a-zA-Z]", "", item).lower().replace("target", "")
         new_channel_list.append(item)
-
     channel_list_int = [
-        new_all_channels.index(new_channel_list)
-        for channel in channel_list
-        if channel in all_channels
+        new_all_channels.index(channel)
+        for channel in new_channel_list
+        if channel in new_all_channels
     ]
     if not channel_list_int:
         channel_list_int = new_channel_list

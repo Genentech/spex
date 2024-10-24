@@ -102,7 +102,7 @@ def pool_ncvs(argperm, argclust, argcperms):
 def CLQ_vec(adata, clust_col='leiden', clust_uniq=None, radius=50, n_perms=1000):
     # Calculate spatial neighbors once.
     adata.obsm['spatial'] = adata.obs[['x_coordinate', 'y_coordinate']].to_numpy()
-
+    radius = float(radius)
     sq.gr.spatial_neighbors(adata, coord_type='generic', radius=radius)
     neigh_idx = adata.obsp['spatial_connectivities'].tolil()
     neighborhoods = [x + [i] for i, x in
@@ -145,11 +145,12 @@ def CLQ_vec(adata, clust_col='leiden', clust_uniq=None, radius=50, n_perms=1000)
         [np.nanmean(local_clq[cell_id_perms == label_dict[x], :].reshape(n_perms + 1, -1, n_clust), 1) for x in
          label_dict])
 
-    # Read out the observed local and global CLQs
+    #Read out the observed local and global CLQs
     idx = [x for x in label_dict]
     lclq = pd.DataFrame(local_clq[0, :, :], columns=idx, index=adata.obs_names)
     gclq = pd.DataFrame(global_clq[:, 0, :], index=idx, columns=idx)
     ncv = pd.DataFrame(ncv[0, :, :], index=adata.obs_names, columns=idx)
+
 
     # Permutation test
     clq_perm = (global_clq[:, 1:, :] < global_clq[:, 0, :].reshape(n_clust, -1, n_clust)).sum(1) / n_perms
@@ -157,18 +158,23 @@ def CLQ_vec(adata, clust_col='leiden', clust_uniq=None, radius=50, n_perms=1000)
 
     adata.obsm['NCV'] = ncv
     adata.obsm['local_clq'] = lclq
+    #colormap by this column 'local_clq' expression'
+    adata.obs[clust_col] = adata.obs[clust_col].astype(str)
+
     adata.uns['CLQ'] = {'global_clq': gclq, 'permute_test': clq_perm}
-    obs = pd.DataFrame(index=adata.obs['cluster_phenograph'].unique(), columns=[], data=[])
-    var = pd.DataFrame(index=adata.obs['cluster_phenograph'].unique(), columns=[], data=[])
+    obs = pd.DataFrame(index=adata.obs[clust_col].unique(), columns=[], data=[])
+    var = pd.DataFrame(index=adata.obs[clust_col].unique(), columns=[], data=[])
 
     bdata = AnnData(
         obs=obs,
         var=var
     )
+
+    bdata.uns['local_clq'] = lclq
     bdata.layers['global_clq'] = gclq
     bdata.layers['permute_test'] = clq_perm
 
-    return bdata
+    return bdata, adata
 
 
 def run(**kwargs):
@@ -177,18 +183,27 @@ def run(**kwargs):
     tasks_list = kwargs.get('tasks_list')
 
     adatas_list = []
+    radius = kwargs.get('radius')
+    n_perms = kwargs.get('n_perms')
     for task in tasks_list:
         omero_id = task['omeroId']
         filtered_adata = adata[adata.obs['image_id'] == omero_id].copy()
 
-        clust_col = filtered_adata.obs.columns[-1:][0]  # Последний столбец obs, предположительно clust_col
-        radius = kwargs.get('radius')
-        n_perms = kwargs.get('n_perms')
+        clust_col = filtered_adata.obs.columns[-1:][0]
         clust_uniq = filtered_adata.obs['cluster_phenograph'].unique()
 
-        processed_adata = CLQ_vec(filtered_adata, clust_col, clust_uniq, radius, n_perms)
+        processed_adata, _ = CLQ_vec(filtered_adata, clust_col, clust_uniq, radius, n_perms)
         adatas_list.append({
             f"{task.get('_key')}-clq": processed_adata}
         )
 
-    return {'adatas_list': adatas_list}
+    clust_col = adata.obs.columns[-1:][0]
+    obs_df=adata.obs[clust_col]
+    cluster_uniq=list(set(obs_df))
+    bdata, adata = CLQ_vec(adata, clust_col, cluster_uniq, radius, n_perms)
+
+    return {
+        'adatas_list': adatas_list,
+        'clq_adata': adata,
+        'adata': bdata
+    }

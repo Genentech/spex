@@ -73,6 +73,7 @@ def run(**kwargs):
     channel_list = [re.sub("[^0-9a-zA-Z]", "", item).lower().replace("target", "") for item in channel_list]
 
     all_channels = kwargs.get("all_channels", [])
+    all_channels = [channel.lower() for channel in all_channels]
     channel_list: list[int] = [
         all_channels.index(channel)
         for channel in channel_list
@@ -86,4 +87,8 @@ def run(**kwargs):
 
     cellpose_label = cellpose_cellseg(image, channel_list, diameter, scaling)
 
-    return {'labels': cellpose_label}
+    return {
+        'labels': cellpose_label,
+        'channel_list': channel_list,
+        'all_channels': all_channels
+    }

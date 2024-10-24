@@ -40,13 +40,10 @@ def preprocess(adata, scale_max = 10, size_factor = None, do_QC = False):
         #Then we calculate P(count = obs.) for FP distribution and discard counts with P > 0.05
         cix,_ = adata.X.nonzero()
         for c in np.unique(cix):
-            #if noise_floor[c] < 1:
-            if noise_floor.iloc[c] < 1:
+            if noise_floor[c] < 1:
                 continue
             crow = adata.X.getrowview(c)
-            # adata.X[c,:] = crow.multiply(crow > noise_floor[c])
-            adata.X[c,:] = crow.multiply(crow > noise_floor.iloc[c])
-
+            adata.X[c,:] = crow.multiply(crow > noise_floor[c])
 
         adata.X = adata.X.tocsr(copy=False)
 
@@ -65,7 +62,6 @@ def preprocess(adata, scale_max = 10, size_factor = None, do_QC = False):
 
     print('Normalizing data...')
 
-    adata = adata.copy()
     adata.layers['counts'] = adata.X.copy()
     if pd.isnull(size_factor):
         adata.uns['prepro']['size_factor'] = np.median(adata.obs.total_counts)
@@ -87,6 +83,7 @@ def preprocess(adata, scale_max = 10, size_factor = None, do_QC = False):
     sc.pp.scale(adata, max_value=scale_max)
 
     return adata
+
 
 
 def run(**kwargs):

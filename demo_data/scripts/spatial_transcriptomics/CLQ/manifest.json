@@ -27,8 +27,7 @@
     }
   },
   "depends_and_script": [
-    "phenograph_cluster",
-    "clustering"
+    "phenograph_cluster"
   ],
 
   "libs": [
@@ -36,7 +35,7 @@
     "squidpy==1.2.3",
     "scanpy==1.9.3",
     "leidenalg==0.9.1",
-    "anndata==0.8.0",
+    "anndata==0.9.2",
     "pandas==2.2.0",
     "numpy==1.22.4",
     "--upgrade setuptools"

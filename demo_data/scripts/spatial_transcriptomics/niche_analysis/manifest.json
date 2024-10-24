@@ -1,0 +1,50 @@
+{
+  "name": "niche_analysis",
+  "description": "Spatial niche analysis",
+  "stage": "1",
+  "params":{
+    "n_neighbors": {
+      "name": "n_neighbors",
+      "description": "neighborhood numbers between 1-1000",
+      "type": "int",
+      "required": true,
+      "default": 170
+    },
+    "resolution": {
+      "name": "resolution",
+      "description": "The resolution of the modularity cost function. Lower is less clusters, higher is more clusters.",
+      "type": "float",
+      "required": true,
+      "default": 0.7
+    }
+  },
+  "script_path": "niche_analysis",
+  "return": {
+    "CLQ": {
+      "name": "CLQ",
+      "type": "adata",
+      "description": "h5ad with CLQ vectors"
+    }
+  },
+  "depends_and_script": [
+    "clq_anndata",
+    "CLQ"
+  ],
+  "conda": ["python=3.10"],
+  "conda_pip": [
+    "leidenalg==0.9.1",
+    "squidpy==1.2.3",
+    "pandas==1.5.3",
+    "scanpy==1.9.3",
+    "anndata==0.10.5",
+    "matplotlib==3.7.2",
+    "scikit-image==0.20.0",
+    "scikit-misc==0.3.1",
+    "scipy==1.11.1",
+    "cmake",
+    "numpy==1.22.4"
+  ],
+  "libs": [
+    "scikit-learn==1.2.1"
+  ]
+}

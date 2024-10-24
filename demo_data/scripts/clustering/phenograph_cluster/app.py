@@ -56,7 +56,8 @@ def phenograph_cluster(
         knn,
         markers,
         transformation='arcsin',
-        scaling='z-score'
+        scaling='z-score',
+        cofactor=5,
 ):
     expdf = adata.to_df()  # Get this anndata from feature extraction output or spex load file input
 
@@ -65,7 +66,7 @@ def phenograph_cluster(
 
     # Dropdown selection for transformation. Options are 'arcsin', 'log', 'none'
     if transformation == 'arcsin':
-        data_for_calc = np.arcsinh(data_for_calc / 5)
+        data_for_calc = np.arcsinh(data_for_calc / cofactor)
     if transformation == 'log':
         data_for_calc = data_for_calc.apply(lambda x: np.log10(x) if np.issubdtype(x.dtype, np.number) else x)
 
@@ -121,6 +122,7 @@ def run(**kwargs):
     adata = kwargs.get('adata')
     scaling = kwargs.get('scaling')
     transformation = kwargs.get('transformation')
+    cofactor = kwargs.get('cofactor', 5)
     knn = kwargs.get('knn')
     channel_list, all_channels = parse_channel_list(kwargs.get("channel_list", []), kwargs.get("all_channels", []))
     if not channel_list:
@@ -155,7 +157,8 @@ def run(**kwargs):
         knn,
         markers=channel_list,
         scaling=scaling,
-        transformation=transformation
+        transformation=transformation,
+        cofactor=cofactor
     )
 
     return {'adata': adata}

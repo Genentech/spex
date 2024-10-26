@@ -34,65 +34,6 @@ sudo apt install git-lfs
 ```
 </details>
 
-
-<details><summary><b> MacOs Apple silicon</b></summary>
-
-#### 1. Open the Terminal application
-
-To open the Terminal on a Mac:
-- Open Launchpad.
-- Click on the Other folder.
-- Click on the Terminal icon to open it.
-
-![Lfs](workflow/images/apple/Terminal.png)
-
-#### 2. Install Homebrew
-
-Install homebrew if you don't already have it
-- During the Homebrew installation process, you may need to confirm that you want to proceed. Just follow the on-screen instructions.
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-  ![Lfs](workflow/images/apple/Homebrew_install.png)
-
-- Add Homebrew to the PATH environment variable in Zsh:
-```
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
-- Once the Homebrew installation is complete, verify that it is installed correctly by running the command:
-```
-brew --version
-```
-![Lfs](workflow/images/apple/Homebrew_install_2.png)
-
-#### 3. Install Git
-
-Download and install Git for macOs</b>
-
-```
-brew install git
-```
-More info [Git for macOs](https://git-scm.com/download/mac).
-
-![Lfs](workflow/images/apple/brew_install_git.png)
-
-
-#### 4. Install Git LFS for Managing Large Files
-
-```
-brew install git-lfs
-```
-
-More info [Git for Git LFS](https://git-lfs.com/).
-
-![Lfs](workflow/images/apple/brew_install_git-lfs.png)
-
-
-</details>
-
-
 <details open><summary><b> Windows</b></summary>
 
 - Download and install [Git for Windows](https://git-scm.com/download/win).
@@ -161,21 +102,7 @@ git lfs pull
   ./app_demo.sh up
   ```
 </details>
-  <details><summary><b> MacOs Apple silicon</b></summary>
-  Execute the application demo script:
 
-- Set permissions to execute the script
-  ```
-  chmod +x app_demo_silicon.sh
-  ``` 
-- Run the script
-  ```
-  ./app_demo_silicon.sh up
-  ```
-
-![run](workflow/images/apple/app_demo_silicon!.png)
-
-</details>
 <details open> <summary><b>Windows</b></summary>
 
 - Run the PowerShell script by command as administrator:

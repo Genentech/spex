@@ -135,6 +135,9 @@ git lfs install
 - For the production bundle of the application, clone the repository:
 ```
 git clone https://github.com/Genentech/spex_demo.git .
+
+git lfs pull
+
 ```
 - Wait for the process to complete. The total size of all downloaded project files should be around 10 gigabytes.
 ![clone](workflow/images/1_2.png)

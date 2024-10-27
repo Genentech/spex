@@ -1,12 +1,9 @@
 *.tiff filter=lfs diff=lfs merge=lfs -text
 *.h5ad filter=lfs diff=lfs merge=lfs -text
 *.pickle filter=lfs diff=lfs merge=lfs -text
-*.zarr filter=lfs diff=lfs merge=lfs -text
-*.zattrs filter=lfs diff=lfs merge=lfs -text
-*.zgroup filter=lfs diff=lfs merge=lfs -text
-*.zarray filter=lfs diff=lfs merge=lfs -text
 
 demo_data/arango_demo/spex_db/* -text
 demo_data/arango_demo/spex_db/**/* -text
 demo_data/arango_demo/spex_db/* -text
 demo_data/arango_demo/spex_db/**/* -text
+demo_data/**/static/** -filter=lfs -diff=lfs -merge=lfs -text

@@ -1,0 +1,11 @@
+{
+    "_index": "_index",
+    "column-order": [
+        "Cell_ID",
+        "Nucleus_area",
+        "x_coordinate",
+        "y_coordinate"
+    ],
+    "encoding-type": "dataframe",
+    "encoding-version": "0.2.0"
+}

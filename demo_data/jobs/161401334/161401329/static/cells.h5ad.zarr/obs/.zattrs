@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:283420e7b520064378607e94eafe3a88be9e4b8922e82d7959d70ddfd5bd4f82
-size 171
+{
+    "_index": "_index",
+    "column-order": [
+        "cluster_phenograph",
+        "image_id"
+    ],
+    "encoding-type": "dataframe",
+    "encoding-version": "0.2.0"
+}

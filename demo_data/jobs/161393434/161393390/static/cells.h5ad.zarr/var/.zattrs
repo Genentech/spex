@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:698f9107af2f4a12fe8fb7c7e6f013dff69bb388a2b39304c86a70f332a0c637
-size 117
+{
+    "_index": "_index",
+    "column-order": [],
+    "encoding-type": "dataframe",
+    "encoding-version": "0.2.0"
+}

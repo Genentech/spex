@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d685125efaa66adadc05b85896cddbdf828e514cbfd3b81aacdb6c5c29dc3e0c
-size 93
+{
+    "encoding-type": "categorical",
+    "encoding-version": "0.2.0",
+    "ordered": false
+}

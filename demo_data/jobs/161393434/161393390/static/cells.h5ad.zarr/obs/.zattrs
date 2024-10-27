@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:89fc57047a4dc3b54c6537e64545c7a2f9f637d413cf1456b8b43a5dfddebb8f
-size 212
+{
+    "_index": "_index",
+    "column-order": [
+        "Cell_ID",
+        "Nucleus_area",
+        "x_coordinate",
+        "y_coordinate"
+    ],
+    "encoding-type": "dataframe",
+    "encoding-version": "0.2.0"
+}

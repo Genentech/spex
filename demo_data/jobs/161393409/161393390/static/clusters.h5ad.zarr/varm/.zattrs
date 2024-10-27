@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0322df6b91abed0366b534e8cedf7d3d9a274aa48ce72677bf3f65f0aefa3acd
-size 64
+{
+    "encoding-type": "dict",
+    "encoding-version": "0.1.0"
+}

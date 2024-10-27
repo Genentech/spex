@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50e27b386520d869cb7cbca7eeaabb0e3e54c51cc674cf8699c572109b359cb1
-size 345
+{
+    "chunks": [
+        10294,
+        2000
+    ],
+    "compressor": {
+        "blocksize": 0,
+        "clevel": 5,
+        "cname": "lz4",
+        "id": "blosc",
+        "shuffle": 1
+    },
+    "dtype": "<f4",
+    "fill_value": 0.0,
+    "filters": null,
+    "order": "C",
+    "shape": [
+        10294,
+        29
+    ],
+    "zarr_format": 2
+}

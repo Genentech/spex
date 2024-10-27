@@ -5,6 +5,7 @@
 Before beginning the installation process, ensure your system meets the following requirements:
 
 - **Storage Space:** A minimum of 70 GB of free disk space is required for installation and initial operations. It is recommended to have up to 150 GB of free space to accommodate future updates and data management needs.
+- Better have 500gb (if yo need to look example data from lfs server )
 
 - **Memory:** At least 16 GB of RAM is essential for smooth performance during installation and runtime.
 
@@ -20,6 +21,31 @@ Before beginning the installation process, ensure your system meets the followin
   <details>
 ---
 </details>
+
+### Please note that the demo server includes large datasets, which may result in lengthy download times. The time required will depend on your network speed and stability, so if any step appears to stall, you may pause with `Control+C` and restart as needed to continue the download process.
+
+## SPEX Application Microservices and Architecture
+
+### Core Repositories:
+- **Full Application Package** (use submodules for easy cloning of all components):  
+  [spex_bundle](https://github.com/Genentech/spex_bundle)
+
+- **Backend**: [spex_backend](https://github.com/Genentech/spex_backend)
+- **Frontend**: [spex_frontend](https://github.com/Genentech/spex_frontend)
+- **Common Modules**: [spex_common](https://github.com/Genentech/spex_common)
+
+### Microservices:
+- **Image Downloader from Omero for Processing**: [spex_ms_omero_image_downloader](https://github.com/Genentech/spex_ms_omero_image_downloader)
+- **Omero Session Management** (providing image information and API access): [spex_ms_omero_sessions](https://github.com/Genentech/spex_ms_omero_sessions)
+- **Task Queue Manager**: [spex_ms_pipeline_manager](https://github.com/Genentech/spex_ms_pipeline_manager)
+- **Script Execution and Environment Management**: [spex_ms_job_manager](https://github.com/Genentech/spex_ms_job_manager)
+
+### Algorithms:
+- **Data Clustering**: [spex_clustering](https://github.com/Genentech/spex_clustering)
+- **Image Segmentation**: [spex_segmentation](https://github.com/Genentech/spex_segmentation)
+- **Spatial Transcriptomics**: [spex_spatial_transcriptomics](https://github.com/Genentech/spex_spatial_transcriptomics)
+
+These algorithms enable customization of data processing parameters and are integrated with the `spex_ms_job_manager` microservice for executing analytical tasks.
 
 # Installation Guide
 

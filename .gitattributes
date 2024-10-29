@@ -1,6 +1,5 @@
 *.tiff filter=lfs diff=lfs merge=lfs -text
 *.h5ad filter=lfs diff=lfs merge=lfs -text
-*.pickle filter=lfs diff=lfs merge=lfs -text
 demo_data/arango_demo/spex_db/* -text
 demo_data/arango_demo/spex_db/**/* -text
 demo_data/arango_demo/spex_db/* -text

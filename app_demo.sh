@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-###
-# This file for demo proposes.
+# This file for demo purposes.
 
 alert="
 IMPORTANT:
@@ -13,24 +12,24 @@ content of file for example:
 $ cat ./set_env.local
 export HOST_DATA_STORAGE=/home/user/data
 "
-source ./set_env.local || (
-    echo "ERROR: set_env.local not found"
-)
+
+if [ -f "./set_env.local" ]; then
+    source ./set_env.local
+else
+    echo "WARNING: set_env.local not found. Using current directory as HOST_DATA_STORAGE."
+    export HOST_DATA_STORAGE=$(pwd)/demo_data
+fi
 
 if [ -z "$HOST_DATA_STORAGE" ]; then
     echo "$alert"
     exit 1
 fi
 
-chmod -R 754 ./redis
-chmod +x ./common/build.sh
-
 DOCKER_COMPOSE_FILE=docker-compose-demo.yml
 
 case "$1" in
     "up")
         echo "Up..."
-        ./common/build.sh
         docker-compose -f $DOCKER_COMPOSE_FILE up -d
         ;;
     "down")

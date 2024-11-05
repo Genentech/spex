@@ -1,0 +1,43 @@
+{
+  "name": "CLQ",
+  "description": "Run CLQ on spatial graph",
+  "stage": "1",
+  "params":{
+    "radius": {
+      "name": "radius",
+      "description": "The radius used to construct the neighborhood content vector, in microns",
+      "type": "float",
+      "required": true,
+      "default": 49.9
+    },
+    "n_perms": {
+      "name": "n_perms",
+      "description": "The number of permutations to use for statistical testing",
+      "type": "int",
+      "required": true,
+      "default": 1000
+    }
+  },
+  "script_path": "CLQ",
+  "return": {
+    "CLQ": {
+      "name": "CLQ",
+      "type": "adata",
+      "description": "h5ad with CLQ vectors"
+    }
+  },
+  "depends_and_script": [
+    "phenograph_cluster"
+  ],
+
+  "libs": [
+    "--use-feature=2020-resolver",
+    "squidpy==1.2.3",
+    "scanpy==1.9.3",
+    "leidenalg==0.9.1",
+    "anndata==0.9.2",
+    "pandas==2.2.0",
+    "numpy==1.22.4",
+    "--upgrade setuptools"
+  ]
+}

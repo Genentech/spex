@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/opt/omero/server/omero/tmp/omero_omero-server/585/processi73uza88.dir/./script", line 51, in <module>
+    from types import StringTypes
+ImportError: cannot import name 'StringTypes' from 'types' (/usr/lib64/python3.9/types.py)

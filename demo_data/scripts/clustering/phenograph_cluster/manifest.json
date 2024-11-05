@@ -1,0 +1,82 @@
+{
+  "name": "phenograph_cluster",
+  "description": "Cluster for feature extraction data",
+  "stage": "1",
+  "params": {
+    "image": {
+      "name": "image",
+      "description": "Multichannel image as numpy array",
+      "type": "array",
+      "hidden": true,
+      "required": false
+    },
+    "all_channels": {
+      "name": "all_channels",
+      "description": "List of all channels of a image",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    },
+    "channel_list": {
+      "name": "channel_list",
+      "description": "list of channels to use for nuclear segmentation",
+      "type": "channels",
+      "required": true
+    },
+    "transformation": {
+      "name": "transformation",
+      "description": "transformation",
+      "enum": ["arcsin", "log"],
+      "type": "enum",
+      "required": true,
+      "default": "arcsin"
+    },
+    "scaling": {
+      "name": "scaling",
+      "description": "scaling",
+      "enum": ["winsorize", "z-score"],
+      "type": "enum",
+      "required": true,
+      "default": "winsorize"
+    },
+    "cofactor": {
+      "name": "cofactor work only if transformation is arcsin",
+      "description": "cofactor work only if transformation is arcsin",
+      "type": "int",
+      "required": false,
+      "default": 5
+    },
+    "knn": {
+      "name": "knn",
+      "description": "knn",
+      "type": "int",
+      "required": true,
+      "default": 10
+    }
+  },
+  "script_path": "phenograph_cluster",
+  "return": {
+    "cluster": {
+      "name": "adata",
+      "type": "array",
+      "description": "training transformed"
+    }
+  },
+  "depends_and_script": [
+    "feature_extraction"
+  ],
+  "depends_or_script": [],
+  "conda": ["python=3.9"],
+  "conda_pip": [
+    "pandas==2.2.0",
+    "scanpy==1.9.4",
+    "phenograph==1.5.7",
+    "anndata==0.9.2",
+    "matplotlib==3.7.2"
+  ],
+  "libs": [
+    "numpy",
+    "numpy==1.24.3",
+    "scipy==1.9.3"
+  ]
+}

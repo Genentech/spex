@@ -1,0 +1,65 @@
+{
+    "name": "differential_expression",
+    "description": "Differential expression",
+    "stage": "3",
+    "params":{
+        "cluster_key":{
+            "name": "cluster_key",
+            "description": "obs field that we will group cells by",
+            "required": false,
+            "type": "string",
+            "default": "leiden"
+        },
+        "method":{
+            "name":"method",
+            "description": "Method to use for differential expression. Can use Mann-Whitney U test (with AUC) from pegasus, any scanpy rank_genes_groups method, or SCVI model (if trained).",
+            "required": true,
+            "type": "string",
+            "default": "wilcoxon"
+        },
+
+        "mdl":{
+            "name":"mdl",
+            "description": "SCVI model for SCVI-based differential expression.",
+            "required": false,
+            "type": "scvi.model.SCVI"
+        }
+    },
+    "script_path": "differential_expression",
+    "return": {
+        "STdiffexp": {
+            "name": "STdiffexp",
+            "type": "adata",
+            "description": "h5ad with .uns['de_res'] storing differential expression"
+        },
+        "SCVImodel":{
+            "name": "SCVImodel",
+            "type": "scvi.model.SCVI",
+            "description": "SCVI encoder (if used.)"
+        }
+    },
+    "depends_and_script": [
+        "clustering",
+        "niche_analysis"
+    ],
+    "conda": ["python=3.11"],
+    "conda_pip": [
+        "scanpy==1.9.4",
+        "scvi-tools==1.0.3",
+        "pegasuspy[all]==1.8.0",
+        "fitsne==1.2.1",
+        "jax==0.4.14",
+        "jaxlib==0.4.14",
+        "jaxtyping==0.2.21",
+        "flax==0.7.4",
+        "pandas==2.2.0"
+    ],
+    "libs": [
+        "rpy2==3.5.11",
+        "fftw",
+        "cmake==3.28.3",
+        "requests==2.31.0",
+        "cython==3.0.8",
+        "numpy==1.23.4"
+    ]
+}

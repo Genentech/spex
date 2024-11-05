@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/opt/omero/server/omero/tmp/omero_omero-server/583/processbfcgi6og.dir/./script", line 105, in <module>
+    client = scripts.client(
+  File "/opt/omero/server/venv3/lib64/python3.9/site-packages/omero/scripts.py", line 411, in client
+    handleParse(c)  # May throw
+  File "/opt/omero/server/venv3/lib64/python3.9/site-packages/omero/scripts.py", line 428, in handleParse
+    raise ParseExit(c.params)
+omero.scripts.ParseExit
+!! 07/17/24 07:08:58.159 error: communicator not destroyed during global destruction.

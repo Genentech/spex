@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/opt/omero/server/omero/tmp/omero_omero-server/579/processu6_8k8n8.dir/./script", line 499, in <module>
+    run_script()
+  File "/opt/omero/server/omero/tmp/omero_omero-server/579/processu6_8k8n8.dir/./script", line 437, in run_script
+    client = scripts.client(
+  File "/opt/omero/server/venv3/lib64/python3.9/site-packages/omero/scripts.py", line 411, in client
+    handleParse(c)  # May throw
+  File "/opt/omero/server/venv3/lib64/python3.9/site-packages/omero/scripts.py", line 428, in handleParse
+    raise ParseExit(c.params)
+omero.scripts.ParseExit
+!! 08/24/24 00:00:00.815 error: communicator not destroyed during global destruction.

@@ -1,0 +1,63 @@
+{
+  "name": "cellpose_cellseg",
+  "description": "Segment image by cellpose deeplearning method",
+  "stage": "3",
+  "params": {
+    "image": {
+      "name": "image",
+      "description": "Multichannel image as numpy array",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    },
+    "all_channels": {
+      "name": "all_channels",
+      "description": "List of all channels of a image",
+      "type": "array",
+      "hidden": true,
+      "required": true
+    },
+    "channel_list": {
+      "name": "channel_list",
+      "description": "list of channels to use for nuclear segmentation",
+      "type": "channels",
+      "required": true
+    },
+    "diameter": {
+      "name": "diameter",
+      "description": "Typical size of nucleus",
+      "type": "int",
+      "required": true,
+      "default": 12
+    },
+    "scaling": {
+      "name": "scaling",
+      "description": "Integer value scaling",
+      "type": "int",
+      "required": true,
+      "default": 1
+    }
+  },
+  "script_path": "cellpose_cellseg",
+  "return": {
+    "labels": {
+      "name": "labels",
+      "type": "array",
+      "description": "Per cell segmentation as numpy array"
+    }
+  },
+  "depends_and_script": [],
+  "depends_or_script": [
+    "median_denoise",
+    "nlm_denoise",
+    "background_subtract",
+    "load_tiff",
+    "load_image"
+  ],
+  "libs": [
+    "opencv-python==4.5.1.48",
+    "opencv-python-headless==4.5.2.54",
+    "cellpose==0.6.5",
+    "numpy==1.22"
+  ]
+}

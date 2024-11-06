@@ -2,7 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/demo_data/scripts/clustering" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/demo_data/scripts/spatial_transcriptomics" vcs="Git" />
   </component>
 </project>

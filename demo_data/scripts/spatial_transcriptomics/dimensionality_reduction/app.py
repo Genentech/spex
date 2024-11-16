@@ -8,6 +8,9 @@ import scvi
 import pegasus as pg
 from pegasusio import UnimodalData
 from anndata import AnnData
+import warnings
+
+warnings.filterwarnings("ignore", category=FutureWarning)
 
 
 # This function reduces dimensionality of transcriptomic data and constructs a k-NN graph.

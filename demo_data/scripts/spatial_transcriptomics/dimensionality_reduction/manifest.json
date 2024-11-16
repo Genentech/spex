@@ -65,14 +65,14 @@
         "fftw",
         "cmake==3.28.3",
         "requests==2.31.0",
-        "cython==3.0.8"
+        "cython==3.0.8",
+        "numpy==1.23.4"
     ],
     "conda_pip": [
         "pandas==1.5.3",
         "scipy==1.11.1",
         "scanpy==1.9.4",
-        "numpy==1.23.4",
-        "scvi-tools==1.0.3",
+        "scvi-tools==1.0.4",
         "pegasuspy[all]==1.8.0",
         "fitsne==1.2.1",
         "jax==0.4.14",

@@ -19,7 +19,12 @@ def annotate_clusters(adata, marker_db, cluster_key='leiden', method='pegasus'):
         for cluster in ctypes:
             if len(ctypes[cluster]) == 0:
                 continue
-            adata.obs.loc[adata.obs[cluster_key] == cluster,'cell_type'] = ctypes[cluster][0].name
+            try:
+                adata.obs.loc[adata.obs[cluster_key] == cluster,'cell_type'] = ctypes[cluster][0].name
+            except:
+                cluster_key = 'louvain'
+                adata.obs.loc[adata.obs[cluster_key] == cluster,'cell_type'] = ctypes[cluster][0].name
+
     else:
         dc.decouple(
             adata,

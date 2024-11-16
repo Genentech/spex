@@ -15,7 +15,7 @@
       "description": "The number of permutations to use for statistical testing",
       "type": "int",
       "required": true,
-      "default": 1000
+      "default": 10
     }
   },
   "script_path": "CLQ",

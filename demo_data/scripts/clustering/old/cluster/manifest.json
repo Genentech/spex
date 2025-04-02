@@ -1,0 +1,30 @@
+{
+  "name": "cluster",
+  "description": "cluster for transformed or zscore data ",
+  "stage": "3",
+  "params": {
+    "knn": {
+      "name": "knn",
+      "description": "",
+      "type": "int",
+      "required": true,
+      "default": 0
+    }
+  },
+  "script_path": "cluster",
+  "return": {
+    "cluster": {
+      "name": "cluster",
+      "type": "array",
+      "description": "training transformed"
+    }
+  },
+  "depends_and_script": [
+    "zscore"
+  ],
+  "libs": [
+    "numpy==1.20.3",
+    "phenograph==1.5.6",
+    "pandas==1.3.4"
+  ]
+}

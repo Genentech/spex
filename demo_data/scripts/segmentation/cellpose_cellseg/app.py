@@ -3,29 +3,21 @@ import cv2
 from cellpose import models
 import re
 
-
-def cellpose_cellseg(img, seg_channels, diameter, scaling):
-
-    """Segment image by cellpose deeplearning method
-
-    Parameters
-    ----------
-    img : Multichannel image as numpy array
-    seg_channels: list of indices to use for nuclear segmentation
-    diameter: typical size of nucleus
-    scaling: Integer value scaling
-
-    Returns
-    -------
-    labels_final : per cell segmentation as numpy array
-
-    """
-    temp2 = np.zeros((img.shape[1], img.shape[2]))
-    for i in seg_channels:
-        temp = img[i]
-        temp2 = temp + temp2
-
-    seg_image = temp2
+def cellpose_cellseg(img, seg_channels, diameter, scaling, use_dask=True):
+    use_dask=True
+    if use_dask:
+        print('dask')
+        import dask.array as da
+        temp2 = da.zeros((img.shape[1], img.shape[2]), chunks=(1024, 1024))
+        for i in seg_channels:
+            temp2 += da.from_array(img[i], chunks=(1024, 1024))
+        seg_image = temp2.compute()
+    else:
+        print('not dask')
+        temp2 = np.zeros((img.shape[1], img.shape[2]))
+        for i in seg_channels:
+            temp2 = img[i] + temp2
+        seg_image = temp2
     seg_image = cv2.resize(
         seg_image,
         (
@@ -83,10 +75,8 @@ def run(**kwargs):
 
     scaling = int(kwargs.get('scaling'))
     diameter = int(kwargs.get('diameter'))
-    print(channel_list, diameter, scaling)
-
-    cellpose_label = cellpose_cellseg(image, channel_list, diameter, scaling)
-
+    use_dask = kwargs.get('use_dask', False)
+    cellpose_label = cellpose_cellseg(image, channel_list, diameter, scaling, use_dask=use_dask)
     return {
         'labels': cellpose_label,
         'channel_list': channel_list,

@@ -40,6 +40,9 @@
   "libs": [
     "scikit-image==0.18.1",
     "scikit-learn==0.24.2",
-    "dask==2021.11.1"
+    "dask==2021.11.1",
+    "numpy==1.22.4",
+    "scipy==1.13.1",
+    "scikit-image==0.18.1"
   ]
 }

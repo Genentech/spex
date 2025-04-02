@@ -1,0 +1,4 @@
+.idea/*.xml
+/.idea/.gitignore
+/test.py
+/.ipynb_checkpoints/mew-checkpoint.ipynb

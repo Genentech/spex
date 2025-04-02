@@ -41,7 +41,8 @@
     "scikit-misc==0.3.1",
     "scipy==1.11.1",
     "cmake",
-    "numpy==1.22.4"
+    "numpy==1.22.4",
+    "zarr==2.16.1"
   ],
   "libs": [
     "scikit-learn==1.2.1"

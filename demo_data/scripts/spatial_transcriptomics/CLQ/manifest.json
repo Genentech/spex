@@ -29,15 +29,21 @@
   "depends_and_script": [
     "phenograph_cluster"
   ],
+  "conda": ["python=3.9"],
 
-  "libs": [
-    "--use-feature=2020-resolver",
+  "conda_pip": [
     "squidpy==1.2.3",
     "scanpy==1.9.3",
     "leidenalg==0.9.1",
     "anndata==0.9.2",
     "pandas==2.2.0",
     "numpy==1.22.4",
-    "--upgrade setuptools"
+    "--upgrade setuptools",
+     "zarr==2.16.1",
+     "numba==0.55.2"
+  ],
+  "libs": [
+    "cmake",
+    "numpy==1.22.4"
   ]
 }
